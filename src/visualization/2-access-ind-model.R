@@ -12,8 +12,9 @@ library(ggmap)
 library(ggspatial)
 library(arrow)
 options(scipen = 10000)
+
 a <- "Essential needs"
-t <- "30 min"
+t <- "15 min"
 
 df <- read_parquet("results/activity_access_ind_model.parquet") %>%
   filter(amenity == a) %>%
@@ -108,7 +109,8 @@ feature_dict <- list(
   `Bike_no` = "Bike number",
   `Two_wheeler_no` = "Two-wheeler number",
   `Escooter_no` = "E-scooter number",
-  `pt_sub` = "Public Transport Subscription"
+  `pt_sub` = "Public Transport Subscription",
+  `main_mode` = "Main mode"
 )
 var_continuous <- c('d2h_nh', 'Age', "access_h")
 
@@ -163,8 +165,8 @@ ggsave(filename = paste0("figures/", "ebm_f_effect_", var, ".png"), plot = g5,
        width = 3, height = 3, unit = "in", , bg = "white", dpi = 300)
 
 # 4. Feature effect --- (top categorical)
-# pt_sub, Car_no, Education, Household_type, 'Bike_no', Gender
-for (var.tst in c('pt_sub', 'Car_no')){
+# main_mode, pt_sub, Car_no, Household_type
+for (var.tst in c('pt_sub', 'Car_no', 'main_mode')){
     df2plot <- df_effect[df_effect$var==var.tst, ]
 
     g5 <- ggplot(data = df2plot) + theme_classic() +
@@ -222,7 +224,7 @@ theme(axis.text.x = element_text(angle = 0, vjust=0.7),
         plot.margin = margin(1,0,0,0, "cm")) +
 coord_flip()
 ggsave(filename = paste0("figures/", "ebm_f_effect_", var.tst, ".png"), plot = g7,
-    width = 5, height = 3, unit = "in", , bg = "white", dpi = 300)
+    width = 6, height = 2, unit = "in", , bg = "white", dpi = 300)
 
 # 4. Interaction effect (distance x access)
 df_inter <- read.csv("results/ebm/interactions.csv")
@@ -238,9 +240,14 @@ df_plot$y <- as.numeric(df_plot$y)
 # Plot as scatter plot
 g8 <- ggplot(df_plot, aes(x = x, y = y, color = effect)) +
   geom_point(alpha = 0.7, size = 2.5) +
-  scale_color_viridis_c(option = "plasma") +
+  scale_color_gradient2(
+    low = "darkblue",
+    mid = "white",
+    high = "darkred",
+    midpoint = 0
+  ) +
   labs(x = "Distance to home (km)", y = "Access at home", 
-       color = "Interaction effect") +
+       color = "Interaction \neffect") +
   theme_classic(base_size = 14) +
   scale_x_log10(
     breaks = trans_breaks("log10", function(x) 10^x),
@@ -253,4 +260,36 @@ g8 <- ggplot(df_plot, aes(x = x, y = y, color = effect)) +
   theme(legend.position = "top")
 
 ggsave(filename = paste0("figures/", "ebm_i_effect_da.png"), plot = g8,
-    width = 4, height = 3, unit = "in", , bg = "white", dpi = 300)
+    width = 3, height = 3, unit = "in", , bg = "white", dpi = 300)
+
+
+# Filter for a specific interaction
+df_plot <- df_inter %>%
+  filter(feature1 == "access_h", feature2 == "main_mode")
+
+# Convert to factor if needed
+df_plot$x <- as.numeric(df_plot$x)
+df_plot$y <- as.factor(df_plot$y)
+
+# Plot as scatter plot
+g9 <- ggplot(df_plot, aes(x = x, y = y, color = effect)) +
+  geom_point(alpha = 0.7, size = 2.5) +
+  scale_color_gradient2(
+    low = "darkblue",
+    mid = "white",
+    high = "darkred",
+    midpoint = 0
+  ) +
+  labs(y = "Main mode", x = "Access at home", 
+       color = "Interaction \neffect") +
+  theme_classic(base_size = 14) +
+  scale_x_log10(
+    breaks = trans_breaks("log10", function(x) 10^x),
+    labels = trans_format("log10", math_format(10^.x))
+  ) +
+  theme(legend.position = "top") +
+  guides(color = guide_colorbar(barheight = unit(0.3, "cm"),
+  barwidth=9))  # adjust length
+
+ggsave(filename = paste0("figures/", "ebm_i_effect_am.png"), plot = g9,
+    width = 6, height = 2.5, unit = "in", , bg = "white", dpi = 300)

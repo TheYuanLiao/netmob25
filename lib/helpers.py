@@ -44,7 +44,7 @@ class EBMResultsOrganizer:
         self.df = None
         self.var_cat = ['time_threshold', 'amenity', 'mode',
                         'Gender', 'Education', 'Household_type',
-                        'Car_no', 'Bike_no', 'Two_wheeler_no', 'Escooter_no', 'pt_sub']
+                        'Car_no', 'Bike_no', 'Two_wheeler_no', 'Escooter_no', 'pt_sub', 'main_mode']
         # Define mapping rules for naming the features
         self.feature_dict = {'d2h_nh': 'Distance to Home Neighborhood',
                             'Age': 'Age',
@@ -59,7 +59,8 @@ class EBMResultsOrganizer:
                             'Bike_no': 'Bike number',
                             'Two_wheeler_no': 'Two-wheeler number',
                             'Escooter_no': 'E-scooter number',
-                            'pt_sub': 'Public Transport Subscription'
+                            'pt_sub': 'Public Transport Subscription',
+                            'main_mode': 'Main mode of transport'
                             }
         self.color_dict = {'d2h_nh': 'steelblue',
                             'Age': 'coral',
@@ -74,12 +75,13 @@ class EBMResultsOrganizer:
                             'Bike_no': 'steelblue',
                             'Two_wheeler_no': 'steelblue',
                             'Escooter_no': 'steelblue',
-                            'pt_sub': 'steelblue'
+                            'pt_sub': 'steelblue',
+                            'main_mode': 'steelblue'
                             }
 
     def load_raw_data(self, select=None):
         var_cat = ['time_threshold', 'amenity', 'mode', 'Gender', 'Education', 'Household_type', 
-                   'Car_no', 'Bike_no', 'Two_wheeler_no', 'Escooter_no', 'pt_sub']
+                   'Car_no', 'Bike_no', 'Two_wheeler_no', 'Escooter_no', 'pt_sub', 'main_mode']
         var_con = ['d2h_nh', 'Age', 'access_h']
         # Load data for modelling
         print('Load data.')

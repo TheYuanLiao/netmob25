@@ -3,7 +3,6 @@ from pathlib import Path
 from interpret.glassbox import ExplainableBoostingRegressor
 from interpret.perf import RegressionPerf
 from sklearn.model_selection import train_test_split
-from sklearn.preprocessing import StandardScaler
 import pandas as pd
 import shap
 import numpy as np
@@ -17,8 +16,6 @@ sys.path.insert(0, os.path.join(ROOT_dir, '/lib'))
 class GAMModel:
     def __init__(self):
         self.data = None
-        # ['time_threshold', 'amenity', 'mode', 'Gender', 'Education', 'Household_type', 'Car_no', 'Bike_no', 'Two_wheeler_no', 'Escooter_no', 'pt_sub'] +\
-        # ['d2h_nh', 'Age']
         self.target_column = 'log_disparity'
         self.X_train = None
         self.features = None
@@ -31,19 +28,12 @@ class GAMModel:
         if filter:
             df = df[(df['time_threshold'] == "15 min") & (df['mode'] == 'Public transit') & (df['amenity'] == "Essential needs")]
             var_cat = ['Gender', 'Education', 'Household_type', 
-                       'Car_no', 'Bike_no', 'Two_wheeler_no', 'Escooter_no', 'pt_sub']  # 
+                       'Car_no', 'Bike_no', 'Two_wheeler_no', 'Escooter_no', 'pt_sub', 'main_mode']  # 
         else:
             var_cat = ['time_threshold', 'amenity', 'mode', 
                 'Gender', 'Education', 'Household_type', 
-                'Car_no', 'Bike_no', 'Two_wheeler_no', 'Escooter_no', 'pt_sub']  # 
+                'Car_no', 'Bike_no', 'Two_wheeler_no', 'Escooter_no', 'pt_sub', 'main_mode']  # 
         df['log_disparity'] = np.log(df['gap'])
-        #print('One Hot Encoder')
-        # One-hot encode
-        #df_encoded = pd.get_dummies(df, columns=var_cat, drop_first=True)
-        #categorical_encoded_features = [
-        #    col for col in df_encoded.columns
-        #    if any(col.startswith(var + '_') for var in var_cat)
-        #]
 
         # Step 4: Combine into final feature list
         for v in var_cat:
