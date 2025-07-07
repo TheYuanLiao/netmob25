@@ -1,0 +1,1785 @@
+primary,count,cumulative_count,cumulative_percent,tag
+professional_services,79468,79468,3.7871462536713176,Civic and utility
+restaurant,70266,149734,7.1357597667894135,Restaurant
+beauty_and_spa,66047,215781,10.283311594144193,Social & Leisure
+shopping,43384,259165,12.350830004941953,Essential needs
+beauty_salon,40314,299479,14.27204375224282,Social & Leisure
+active_life,37770,337249,16.072020019434216,Social & Leisure
+automotive_repair,28720,365969,17.440707294883957,Other
+clothing_store,24627,390596,18.614337571085244,Essential needs
+community_services_non_profits,24080,414676,19.76189988,Civic and utility
+real_estate,23443,438119,20.87910516827181,Other
+pharmacy,22660,460779,21.95899561610228,Health services
+bakery,21885,482664,23.00195247624217,Essential needs
+bar,19800,502464,23.94554607143385,Social & Leisure
+hotel,19432,521896,24.87160216950277,Social & Leisure
+pizza_restaurant,17995,539891,25.729176247557024,Restaurant
+cafe,17432,557323,26.559919861263147,Social & Leisure
+contractor,16990,574313,27.36959941592509,Civic and utility
+hospital,16947,591260,28.177229752173243,Health services
+education,16808,608068,28.97823587075818,Education
+flowers_and_gifts_shop,16415,624483,29.760513086165822,Other
+construction_services,16328,640811,30.538644208503683,Civic and utility
+sports_club_and_league,14610,655421,31.234901906773903,Social & Leisure
+home_improvement_store,14328,669749,31.91772054474897,Other
+supermarket,14095,683844,32.589435278295774,Essential needs
+church_cathedral,13303,697147,33.223406268034914,Social & Leisure
+furniture_store,13282,710429,33.85637647668823,Other
+social_service_organizations,13249,723678,34.48777402934957,Civic and utility
+elementary_school,13130,736808,35.113500489191324,Education
+real_estate_agent,12560,749368,35.712062890989685,Other
+eyewear_and_optician,12470,761838,36.30633623099172,Health services
+health_and_medical,12429,774267,36.898655665064304,Health services
+event_planning,11822,786089,37.46204776013279,Social & Leisure
+physical_therapy,11598,797687,38.014764856952645,Health services
+insurance_agency,11425,809112,38.55923742387511,Other
+french_restaurant,11384,820496,39.10175608486814,Restaurant
+advertising_agency,11337,831833,39.64203490247865,Other
+car_dealer,11053,842886,40.16877934730964,Other
+accommodation,10974,853860,40.69175895,Other
+dentist,10659,864519,41.19972683441981,Health services
+bed_and_breakfast,10645,875164,41.70702753244079,Essential needs
+bank_credit_union,10620,885784,42.21313682440724,Other
+naturopathic_holistic,10400,896184,42.708761743093774,Health services
+automotive,10102,906286,43.190185101610254,Other
+gas_station,10099,916385,43.67146549140019,Essential needs
+women's_clothing_store,9520,925905,44.125152916967096,Essential needs
+jewelry_store,9500,935405,44.577887217690375,Social & Leisure
+butcher_shop,9488,944893,45.03004964350748,Essential needs
+grocery_store,8789,953682,45.448900356039786,Essential needs
+hair_salon,8733,962415,45.86508231900993,Social & Leisure
+shoe_store,8650,971065,46.27730881387902,Essential needs
+wholesale_store,8541,979606,46.68434077835034,Essential needs
+travel_services,8536,988142,47.09113446161075,Social & Leisure
+driving_school,8490,996632,47.495735957730815,Education
+electrician,8288,1004920,47.89071089293024,Civic and utility
+home_cleaning,8246,1013166,48.28368426595805,Essential needs
+retail,8054,1021220,48.66750764048703,Essential needs
+employment_agencies,7928,1029148,49.04532632850115,Civic and utility
+landmark_and_historical_building,7832,1036980,49.41857001726586,Social & Leisure
+gym,7764,1044744,49.78857308156223,Social & Leisure
+caterer,7666,1052410,50.15390583412482,Social & Leisure
+carpenter,7639,1060049,50.51795186814852,Other
+lawyer,7587,1067636,50.87951977757879,Civic and utility
+tattoo_and_piercing,7427,1075063,51.233462688260026,Social & Leisure
+veterinarian,7122,1082185,51.57287044507595,Health services
+financial_service,7004,1089189,51.90665476531445,Other
+architectural_designer,6964,1096153,52.238532835865705,Other
+landscaping,6958,1103111,52.570124968963874,Other
+counseling_and_mental_health,6954,1110065,52.901526477093306,Health services
+art_gallery,6951,1117016,53.23278501649621,Social & Leisure
+winery,6949,1123965,53.563948243414735,Social & Leisure
+transportation,6917,1130882,53.893586470583465,Civic and utility
+business_management_services,6763,1137645,54.21588563645626,Civic and utility
+industrial_equipment,6719,1144364,54.53608792767307,Civic and utility
+roofing,6687,1151051,54.85476521914008,Essential needs
+holiday_rental_home,6651,1157702,55.17172688588856,Social & Leisure
+liquor_store,6628,1164330,55.48759245906686,Other
+it_service_and_computer_repair,6582,1170912,55.80126584510482,Civic and utility
+engineering_services,6510,1177422,56.11150798170572,Civic and utility
+painting,6492,1183914,56.42089230594736,Social & Leisure
+fast_food_restaurant,6486,1190400,56.729990692735896,Restaurant
+home_service,6482,1196882,57.03889845455572,Essential needs
+freight_and_cargo_service,6449,1203331,57.34623356038355,Civic and utility
+industrial_company,6344,1209675,57.64856476078234,Other
+public_service_and_government,6333,1216008,57.950371742517135,Civic and utility
+town_hall,6328,1222336,58.251940443041015,Civic and utility
+school,6305,1228641,58.55241304999473,Education
+hvac_services,6287,1234928,58.85202784458918,Civic and utility
+accountant,6281,1241209,59.15135670173054,Civic and utility
+plumbing,6241,1247450,59.44877930918464,Civic and utility
+farm,6199,1253649,59.744200354467125,Other
+pub,6101,1259750,60.034951088015845,Social & Leisure
+spas,6059,1265809,60.32370025939293,Social & Leisure
+retirement_home,6015,1271824,60.61035255611403,Health services
+coffee_shop,5780,1277604,60.88580563592251,Social & Leisure
+funeral_services_and_cemeteries,5758,1283362,61.16021027840301,Civic and utility
+fashion,5674,1289036,61.430611796540255,Social & Leisure
+printing_services,5665,1294701,61.70058440849788,Civic and utility
+information_technology_company,5618,1300319,61.96831717707296,Civic and utility
+italian_restaurant,5593,1305912,62.23485853959352,Restaurant
+nursery_and_gardening,5534,1311446,62.498588183825376,Other
+campground,5492,1316938,62.760316265885606,Social & Leisure
+web_designer,5482,1322420,63.021567785524034,Other
+building_supply_store,5459,1327879,63.281723211592286,Other
+college_university,5398,1333277,63.53897160688747,Education
+parking,5290,1338567,63.791073128027065,Civic and utility
+marketing_agency,5205,1343772,64.03912386858124,Other
+bookstore,5181,1348953,64.28603085932306,Social & Leisure
+software_development,5121,1354074,64.53007848,Civic and utility
+graphic_designer,5080,1359154,64.77217219,Other
+children's_clothing_store,5002,1364156,65.01054870920684,Essential needs
+doctor,4984,1369140,65.24806742023894,Health services
+hardware_store,4982,1374122,65.48549081878666,Essential needs
+bicycle_shop,4856,1378978,65.71690953081954,Other
+pet_groomer,4855,1383833,65.94828058661022,Social & Leisure
+travel,4832,1388665,66.17855554883073,Social & Leisure
+sporting_goods,4759,1393424,66.40535161,Social & Leisure
+park,4522,1397946,66.62085313251627,Social & Leisure
+cosmetic_and_beauty_supplies,4494,1402440,66.83502028487949,Social & Leisure
+psychologist,4481,1406921,67.04856790609432,Health services
+eat_and_drink,4473,1411394,67.26173427737172,Essential needs
+interior_design,4455,1415849,67.47404283628985,Other
+arts_and_crafts,4351,1420200,67.68139515,Social & Leisure
+fitness_trainer,4347,1424547,67.88855683078364,Social & Leisure
+mobile_phone_store,4272,1428819,68.09214429738257,Essential needs
+nutritionist,4042,1432861,68.28477082827979,Health services
+topic_concert_venue,4034,1436895,68.47701610923954,Social & Leisure
+theatre,3969,1440864,68.66616373445751,Social & Leisure
+computer_hardware_company,3945,1444809,68.85416760986313,Other
+shipping_center,3936,1448745,69.04174258,Civic and utility
+taxi_service,3888,1452633,69.22703004869038,Social & Leisure
+chinese_restaurant,3880,1456513,69.41193627,Restaurant
+ice_cream_shop,3802,1460315,69.59312530112788,Other
+high_school,3800,1464115,69.77421902,Education
+burger_restaurant,3794,1467909,69.95502680425342,Restaurant
+agriculture,3764,1471673,70.1344049,Other
+convenience_store,3754,1475427,70.31330643297316,Essential needs
+home_goods_store,3747,1479174,70.49187437242686,Essential needs
+automotive_parts_and_accessories,3746,1482920,70.67039465563838,Other
+discount_store,3692,1486612,70.84634150177209,Essential needs
+day_care_preschool,3667,1490279,71.02109694185128,Education
+tire_dealer_and_repair,3614,1493893,71.19332660109485,Other
+yoga_studio,3533,1497426,71.36169610472173,Social & Leisure
+osteopathic_physician,3525,1500951,71.52968435841116,Health services
+life_coach,3512,1504463,71.69705308095223,Social & Leisure
+tobacco_shop,3506,1507969,71.86413586604021,Other
+stadium_arena,3485,1511454,72.03021787004238,Social & Leisure
+arts_and_entertainment,3479,1514933,72.19601393659147,Social & Leisure
+event_photography,3457,1518390,72.36076156581255,Social & Leisure
+dance_school,3450,1521840,72.52517560133838,Education
+carpet_store,3443,1525283,72.68925604316892,Other
+commercial_industrial,3429,1528712,72.85266929760894,Civic and utility
+men's_clothing_store,3357,1532069,73.0126513,Essential needs
+sushi_restaurant,3304,1535373,73.17010752677923,Restaurant
+boutique,3279,1538652,73.32637234489204,Social & Leisure
+electronics,3270,1541922,73.48220826,Essential needs
+martial_arts_club,3224,1545146,73.63585198161803,Social & Leisure
+health_food_store,3218,1548364,73.78920976895778,Essential needs
+pet_store,3207,1551571,73.94204334,Essential needs
+gardener,3187,1554758,74.09392378146563,Other
+music_school,3159,1557917,74.24446985051667,Education
+laundromat,3126,1561043,74.39344326,Essential needs
+public_and_government_association,3079,1564122,74.54017683325223,Civic and utility
+delicatessen,3071,1567193,74.68652915299131,Essential needs
+fruits_and_vegetables,3061,1570254,74.83240491030857,Essential needs
+business_manufacturing_and_supply,3021,1573275,74.97637441793857,Civic and utility
+casino,2944,1576219,75.11667439492061,Social & Leisure
+youth_organizations,2941,1579160,75.2568314,Social & Leisure
+sports_and_recreation_venue,2924,1582084,75.39617825531451,Social & Leisure
+motorcycle_dealer,2852,1584936,75.53209385801584,Other
+toy_store,2811,1587747,75.66605555478776,Social & Leisure
+business_advertising,2686,1590433,75.79406022,Other
+chocolatier,2680,1593113,75.92177895033313,Essential needs
+notary_public,2678,1595791,76.04940236689492,Civic and utility
+sewing_and_alterations,2647,1598438,76.17554843994908,Other
+key_and_locksmith,2618,1601056,76.30031248197999,Essential needs
+car_rental_agency,2614,1603670,76.42488589904217,Other
+diner,2604,1606274,76.54898275368251,Essential needs
+dog_trainer,2591,1608865,76.67246007717452,Social & Leisure
+ev_charging_station,2537,1611402,76.79336396358872,Civic and utility
+religious_organization,2536,1613938,76.91422019376076,Civic and utility
+brewery,2530,1616468,77.03479049,Social & Leisure
+agricultural_service,2482,1618950,77.15307327957392,Civic and utility
+barber,2455,1621405,77.27006935412925,Essential needs
+sandwich_shop,2445,1623850,77.38658886626276,Essential needs
+appliance_store,2439,1626289,77.50282244094319,Essential needs
+home_health_care,2420,1628709,77.61815054702218,Health services
+library,2412,1631121,77.73309740316371,Education
+tutoring_center,2386,1633507,77.84680519700852,Education
+dance_club,2372,1635879,77.9598458,Social & Leisure
+music_venue,2361,1638240,78.07236219125308,Social & Leisure
+psychotherapist,2353,1640593,78.18449732910591,Health services
+tours,2303,1642896,78.29424965484966,Social & Leisure
+lingerie_store,2301,1645197,78.40390666810906,Essential needs
+storage_facility,2290,1647487,78.51303946270446,Other
+central_government_office,2288,1649775,78.62207694,Civic and utility
+fire_department,2279,1652054,78.73068552,Civic and utility
+beauty_product_supplier,2255,1654309,78.83815034686596,Other
+fashion_accessories_store,2243,1656552,78.94504329807883,Other
+indian_restaurant,2242,1658794,79.05188859304953,Restaurant
+computer_store,2227,1661021,79.15801904,Essential needs
+pet_services,2206,1663227,79.26314871463967,Essential needs
+swimming_pool,2144,1665371,79.36532369787658,Social & Leisure
+tax_services,2129,1667500,79.46678383748078,Civic and utility
+topic_publisher,2123,1669623,79.56795803963188,Other
+preschool,2114,1671737,79.66870333560337,Education
+telecommunications_company,2099,1673836,79.76873378794211,Civic and utility
+antique_store,2087,1675923,79.86819237,Social & Leisure
+metal_fabricator,2080,1678003,79.96731735,Other
+rental_service,2075,1680078,80.06620405163841,Essential needs
+auto_detailing,2021,1682099,80.16251732,Other
+cheese_shop,2020,1684119,80.25878292629342,Essential needs
+property_management,2006,1686125,80.35438135,Civic and utility
+amateur_sports_team,1984,1688109,80.44893133259721,Social & Leisure
+organic_grocery_store,1979,1690088,80.54324303587418,Essential needs
+police_department,1974,1692062,80.63731645794027,Civic and utility
+thrift_store,1940,1694002,80.72976956777218,Essential needs
+monument,1939,1695941,80.82217502136191,Social & Leisure
+korean_grocery_store,1914,1697855,80.91338907,Essential needs
+tea_room,1913,1699768,81.00455546019012,Social & Leisure
+asian_restaurant,1909,1701677,81.09553122651441,Restaurant
+nail_salon,1906,1703583,81.18636402411215,Social & Leisure
+community_center,1901,1705484,81.27695854,Civic and utility
+trusts,1893,1707377,81.36717180694838,Civic and utility
+internet_service_provider,1889,1709266,81.45719444842904,Civic and utility
+auto_glass_service,1882,1711148,81.54688349621443,Other
+music_production,1881,1713029,81.63652488775763,Social & Leisure
+garbage_collection_service,1881,1714910,81.72616627930086,Civic and utility
+e_cigarette_store,1881,1716791,81.81580767084405,Other
+wedding_planning,1863,1718654,81.90459125,Social & Leisure
+car_wash,1862,1720516,81.99332717296977,Other
+shopping_center,1857,1722373,82.08182481470062,Essential needs
+wine_bar,1856,1724229,82.17027480018929,Social & Leisure
+masonry_concrete,1845,1726074,82.25820056701397,Civic and utility
+laboratory_testing,1840,1727914,82.34588805262774,Health services
+family_practice,1840,1729754,82.43357553824151,Health services
+museum,1817,1731571,82.52016693028511,Social & Leisure
+cafetaria,1796,1733367,82.60575754124291,Social & Leisure
+attractions_and_activities,1781,1735148,82.69063330856797,Social & Leisure
+business_to_business,1753,1736901,82.77417470111196,Other
+cinema,1745,1738646,82.85733484,Social & Leisure
+metal_supplier,1724,1740370,82.93949420523923,Other
+marketing_consultant,1707,1742077,83.02084341064287,Other
+dry_cleaning,1702,1743779,83.10195433483561,Essential needs
+podiatrist,1677,1745456,83.18187385297382,Health services
+travel_company,1669,1747125,83.26141212117457,Social & Leisure
+greek_restaurant,1652,1748777,83.34014023325824,Restaurant
+windows_installation,1640,1750417,83.41829647043573,Civic and utility
+middle_school,1625,1752042,83.49573786398051,Education
+cultural_center,1613,1753655,83.57260738,Social & Leisure
+appraisal_services,1598,1755253,83.64876205762496,Civic and utility
+department_store,1591,1756844,83.72458313893559,Essential needs
+energy_company,1572,1758416,83.79949875164473,Civic and utility
+public_plaza,1566,1759982,83.87412842690081,Social & Leisure
+health_insurance_office,1557,1761539,83.94832919597725,Health services
+atms,1553,1763092,84.02233934008495,Essential needs
+bridge,1529,1764621,84.09520573,Civic and utility
+ambulance_and_ems_services,1516,1766137,84.1674526,Health services
+thai_restaurant,1514,1767651,84.23960414818994,Restaurant
+turkish_restaurant,1500,1769151,84.31108851146205,Restaurant
+pet_breeder,1495,1770646,84.38233459352324,Other
+alternative_medicine,1491,1772137,84.45339005,Health services
+bridal_shop,1467,1773604,84.52330175789581,Social & Leisure
+media_news_company,1458,1775062,84.59278455899629,Other
+home_developer,1446,1776508,84.66169548519058,Civic and utility
+landscape_architect,1444,1777952,84.73051109890052,Civic and utility
+architect,1420,1779372,84.79818296279811,Other
+real_estate_service,1416,1780788,84.86566420172696,Civic and utility
+child_care_and_day_care,1403,1782191,84.93252590950748,Education
+lake,1397,1783588,84.99910167983488,Social & Leisure
+used_car_dealer,1383,1784971,85.06501026277175,Other
+chiropractor,1378,1786349,85.13068056449772,Health services
+mass_media,1363,1787712,85.19563602259097,Social & Leisure
+travel_agents,1363,1789075,85.26059148068421,Social & Leisure
+language_school,1356,1790431,85.32521334508219,Education
+mortgage_broker,1348,1791779,85.38945396,Civic and utility
+florist,1339,1793118,85.45326567,Essential needs
+internal_medicine,1330,1794448,85.51664846992486,Health services
+musical_instrument_store,1330,1795778,85.58003127202612,Social & Leisure
+building_contractor,1322,1797100,85.64303282418993,Civic and utility
+automotive_dealer,1314,1798414,85.70565312641628,Other
+reflexology,1310,1799724,85.76808280367392,Health services
+massage,1305,1801029,85.83027419972063,Health services
+furniture_assembly,1293,1802322,85.89189372086119,Other
+candy_store,1291,1803613,85.95341792951737,Other
+automotive_services_and_repair,1281,1804894,86.01446557575174,Other
+b2b_science_and_technology,1280,1806174,86.07546556574394,Other
+japanese_restaurant,1277,1807451,86.13632258700957,Restaurant
+office_equipment,1276,1808727,86.19713195203303,Other
+auto_company,1275,1810002,86.25789366081432,Other
+desserts,1269,1811271,86.31836943214252,Other
+charity_organization,1252,1812523,86.37803504735363,Civic and utility
+post_office,1251,1813774,86.43765300632256,Civic and utility
+fabric_store,1241,1815015,86.49679440286967,Other
+labor_union,1239,1816254,86.55584048693242,Civic and utility
+party_supply,1235,1817489,86.61469594602644,Social & Leisure
+financial_advising,1226,1818715,86.67312249894084,Civic and utility
+appellate_practice_lawyers,1221,1819936,86.73131077064433,Civic and utility
+hvac_supplier,1220,1821156,86.78945138610563,Civic and utility
+massage_therapy,1212,1822368,86.84721075162949,Health services
+catholic_church,1209,1823577,86.90482715,Social & Leisure
+pool_cleaning,1192,1824769,86.96163338910702,Civic and utility
+agricultural_cooperatives,1191,1825960,87.01839197354506,Civic and utility
+courier_and_delivery_services,1184,1827144,87.07481696428783,Other
+general_dentistry,1176,1828320,87.13086070509316,Health services
+business,1167,1829487,87.18647553971886,Other
+wholesaler,1155,1830642,87.24151849943837,Essential needs
+acupuncture,1141,1831783,87.29589427176735,Health services
+doner_kebab,1128,1832911,87.34965051294796,Essential needs
+amusement_park,1126,1834037,87.40331144164422,Social & Leisure
+campus_building,1125,1835162,87.45692471409829,Education
+sports_and_fitness_instruction,1121,1836283,87.51034736158364,Social & Leisure
+home_security,1119,1837402,87.56367469658461,Essential needs
+mattress_store,1114,1838516,87.61676375037469,Other
+non_governmental_association,1105,1839621,87.66942389798514,Civic and utility
+fishmonger,1103,1840724,87.72198873311122,Essential needs
+furniture_manufacturers,1096,1841820,87.77421997454204,Other
+castle,1095,1842915,87.82640355973066,Social & Leisure
+mosque,1095,1844010,87.87858714,Social & Leisure
+cocktail_bar,1094,1845104,87.93072307386575,Social & Leisure
+tanning_salon,1079,1846183,87.98214415917947,Social & Leisure
+energy_equipment_and_solution,1072,1847255,88.03323165079793,Civic and utility
+lighting_store,1066,1848321,88.08403320496329,Essential needs
+cottage,1065,1849386,88.13478710288649,Social & Leisure
+land_surveying,1060,1850446,88.18530271959877,Civic and utility
+career_counseling,1059,1851505,88.23577068006887,Education
+business_to_business_services,1056,1852561,88.28609567181243,Civic and utility
+truck_dealer_for_businesses,1054,1853615,88.33632535107162,Other
+broadcasting_media_production,1052,1854667,88.38645971784645,Social & Leisure
+hearing_aids,1049,1855716,88.43645111589474,Health services
+resort,1043,1856759,88.48615657648993,Social & Leisure
+auto_manufacturers_and_distributors,1043,1857802,88.53586203708514,Other
+paint_store,1039,1858841,88.58537687,Other
+history_museum,1038,1859879,88.63484405,Social & Leisure
+nurse_practitioner,1022,1860901,88.68354873160528,Health services
+evangelical_church,1022,1861923,88.73225341111467,Social & Leisure
+appliance_repair_service,1019,1862942,88.78081512189752,Civic and utility
+vitamins_and_supplements,1012,1863954,88.82904324,Essential needs
+internet_marketing_service,1009,1864963,88.87712838734613,Other
+screen_printing_t_shirt_printing,1008,1865971,88.92516587946497,Social & Leisure
+horse_boarding,1001,1866972,88.97286977788855,Social & Leisure
+breakfast_and_brunch_restaurant,998,1867970,89.02043070758559,Restaurant
+food_delivery_service,998,1868968,89.06799163728262,Other
+pest_control_service,994,1869962,89.11536194201094,Civic and utility
+medical_center,993,1870955,89.16268459049705,Health services
+tapas_bar,987,1871942,89.2097213,Social & Leisure
+sunglasses_store,986,1872928,89.25671035632095,Essential needs
+food_beverage_service_distribution,982,1873910,89.30350879,Essential needs
+golf_course,982,1874892,89.35030721596522,Social & Leisure
+music_and_dvd_store,980,1875872,89.39701033,Social & Leisure
+tennis_court,977,1876849,89.44357048191421,Social & Leisure
+farmers_market,971,1877820,89.48984469307236,Essential needs
+translating_and_interpreting_services,962,1878782,89.53568999805086,Civic and utility
+legal_services,960,1879742,89.58143999,Civic and utility
+seafood_restaurant,953,1880695,89.62685638934389,Restaurant
+credit_union,949,1881644,89.67208216317401,Civic and utility
+photography_store_and_services,941,1882585,89.71692668706672,Social & Leisure
+health_spa,936,1883521,89.76153293,Social & Leisure
+mountain,934,1884455,89.80604385994593,Social & Leisure
+janitorial_services,930,1885385,89.85036416517464,Civic and utility
+currency_exchange,929,1886314,89.89463681416115,Essential needs
+self_storage_facility,929,1887243,89.93890946314767,Civic and utility
+international_business_and_trade_services,910,1888153,89.98227664353274,Civic and utility
+political_organization,910,1889063,90.02564382391782,Civic and utility
+solar_installation,895,1889958,90.06829616067016,Civic and utility
+online_shop,890,1890848,90.1107102162116,Essential needs
+escape_rooms,887,1891735,90.15298130302652,Social & Leisure
+surgical_appliances_and_supplies,882,1892617,90.19501411,Health services
+bike_repair_maintenance,882,1893499,90.23704691423448,Social & Leisure
+beach,881,1894380,90.27903206,Social & Leisure
+government_services,880,1895260,90.32096955671594,Civic and utility
+print_media,879,1896139,90.36285939359338,Other
+auto_electrical_repair,877,1897016,90.40465391798648,Civic and utility
+vocational_and_technical_school,877,1897893,90.44644844237956,Education
+organization,871,1898764,90.48795702931956,Other
+steakhouse,871,1899635,90.52946561625956,Social & Leisure
+gift_shop,867,1900502,90.57078357823082,Social & Leisure
+aquatic_pet_store,866,1901368,90.61205388,Essential needs
+used_vintage_and_consignment,866,1902234,90.65332419,Social & Leisure
+structure_and_geography,860,1903094,90.69430856,Civic and utility
+motorcycle_repair,856,1903950,90.73510230127228,Other
+obstetrician_and_gynecologist,850,1904800,90.77561010712648,Health services
+vietnamese_restaurant,840,1905640,90.81564135055883,Restaurant
+audio_visual_equipment_store,832,1906472,90.85529134405375,Social & Leisure
+medical_supply,830,1907302,90.89484602506433,Health services
+german_restaurant,830,1908132,90.93440070607488,Restaurant
+public_utility_company,828,1908960,90.97386007460108,Civic and utility
+pancake_house,827,1909787,91.01327179,Other
+lumber_store,824,1910611,91.05254053044256,Other
+movie_television_studio,823,1911434,91.09176161775784,Social & Leisure
+movers,820,1912254,91.13083974,Civic and utility
+newspaper_and_magazines_store,805,1913059,91.16920301130264,Other
+orthopedist,803,1913862,91.20747097377428,Health services
+equestrian_facility,796,1914658,91.24540534255068,Social & Leisure
+flooring_contractors,793,1915451,91.28319674260054,Civic and utility
+sign_making,789,1916240,91.32079751768168,Other
+environmental_conservation_organization,789,1917029,91.35839829276276,Civic and utility
+bar_and_grill_restaurant,785,1917814,91.39580844287518,Restaurant
+kids_recreation_and_party,776,1918590,91.43278968680796,Social & Leisure
+linen,774,1919364,91.46967561825636,Other
+belgian_restaurant,771,1920135,91.50641858,Restaurant
+mexican_restaurant,769,1920904,91.54306623,Restaurant
+video_game_store,766,1921670,91.57957091272664,Social & Leisure
+social_and_human_services,766,1922436,91.61607559,Civic and utility
+countertop_installation,764,1923200,91.6524849632642,Other
+pharmaceutical_products_wholesaler,750,1923950,91.68822714490024,Health services
+senior_citizen_services,749,1924699,91.72392167,Health services
+medical_research_and_development,748,1925447,91.75956854,Health services
+drywall_services,747,1926194,91.79516775235528,Civic and utility
+recycling_center,745,1926939,91.83067165278042,Civic and utility
+commercial_real_estate,742,1927681,91.86603258447904,Other
+chemical_plant,741,1928422,91.90134585993545,Civic and utility
+fish_and_chips_restaurant,740,1929162,91.93661147914968,Restaurant
+animal_shelter,737,1929899,91.97173412963735,Civic and utility
+beer_garden,737,1930636,92.00685678012506,Social & Leisure
+food_truck,733,1931369,92.04178880564402,Social & Leisure
+boat_rental_and_training,732,1932101,92.0766731749208,Social & Leisure
+medical_service_organizations,729,1932830,92.11141457547104,Health services
+fireplace_service,729,1933559,92.14615597602128,Civic and utility
+pet_sitting,728,1934287,92.18084972032932,Social & Leisure
+auto_body_shop,727,1935014,92.21549580839522,Other
+psychic,723,1935737,92.24995127149236,Social & Leisure
+public_relations,719,1936456,92.28421611,Civic and utility
+machine_shop,717,1937173,92.31838563526486,Other
+occupational_therapy,716,1937889,92.35250750466672,Health services
+beer_bar,715,1938604,92.38658171782645,Social & Leisure
+art_school,714,1939318,92.42060827474396,Education
+playground,714,1940032,92.45463483166148,Social & Leisure
+metals,713,1940745,92.48861373233682,Other
+social_media_agency,709,1941454,92.52240200804344,Other
+media_agency,708,1942162,92.55614262750784,Other
+lounge,703,1942865,92.58964496576138,Social & Leisure
+hair_stylist,702,1943567,92.62309965,Social & Leisure
+political_party_office,695,1944262,92.65622073608878,Civic and utility
+art_museum,694,1944956,92.68929416816268,Social & Leisure
+escrow_services,685,1945641,92.72193869405694,Civic and utility
+fence_and_gate_sales_service,685,1946326,92.7545832199512,Other
+kitchen_supply_store,682,1947008,92.78708478,Other
+motorsport_vehicle_dealer,667,1947675,92.81887149,Social & Leisure
+disability_services_and_support_organization,665,1948340,92.85056289170451,Health services
+cabinet_sales_service,665,1949005,92.88225429275516,Other
+laser_hair_removal,664,1949669,92.91389804,Health services
+dog_walkers,662,1950331,92.94544647,Social & Leisure
+water_treatment_equipment_and_services,658,1950989,92.97680427724303,Civic and utility
+courthouse,658,1951647,93.0081620845984,Civic and utility
+radio_station,653,1952300,93.03928161074286,Social & Leisure
+iron_and_steel_industry,651,1952951,93.07030582440296,Civic and utility
+glass_and_mirror_sales_service,649,1953600,93.10123472557868,Other
+hostel,647,1954247,93.13206831427004,Social & Leisure
+weight_loss_center,646,1954893,93.16285424671923,Health services
+pediatrician,645,1955538,93.19359252292622,Health services
+shoe_repair,642,1956180,93.22418783040668,Other
+hunting_and_fishing_supplies,641,1956821,93.25473548164496,Social & Leisure
+food,640,1957461,93.28523547664106,Essential needs
+hobby_shop,640,1958101,93.31573547163715,Social & Leisure
+water_heater_installation_repair,638,1958739,93.34614015414888,Civic and utility
+cabin,638,1959377,93.3765448366606,Social & Leisure
+cupcake_shop,633,1960010,93.40671123796145,Other
+b2b_textiles,632,1960642,93.43682998302008,Other
+excavation_service,627,1961269,93.46671044686782,Civic and utility
+hookah_bar,626,1961895,93.49654325447338,Social & Leisure
+tiling,624,1962519,93.52628074959456,Other
+optometrist,619,1963138,93.55577996350485,Health services
+pilates_studio,617,1963755,93.58518386493076,Social & Leisure
+textile_mill,617,1964372,93.61458776635668,Other
+psychiatrist,614,1964986,93.64384869905608,Health services
+telecommunications,612,1965598,93.67301431927108,Civic and utility
+rental_services,612,1966210,93.70217993948611,Essential needs
+river,610,1966820,93.73125024721676,Other
+tree_services,610,1967430,93.7603205549474,Civic and utility
+american_restaurant,606,1968036,93.78920023770934,Restaurant
+gastropub,605,1968641,93.81803226422907,Social & Leisure
+educational_services,604,1969245,93.84681663450664,Education
+fire_protection_service,602,1969847,93.87550569229984,Civic and utility
+television_service_providers,602,1970449,93.90419475009304,Civic and utility
+cremation_services,600,1971049,93.93278849540188,Civic and utility
+tile_store,598,1971647,93.96128692822636,Other
+soccer_field,595,1972242,93.98964239232428,Social & Leisure
+investing,592,1972834,94.01785488769568,Other
+vegetarian_restaurant,587,1973421,94.04582910185616,Restaurant
+towing_service,587,1974008,94.07380331601664,Civic and utility
+auto_parts_and_supply_store,585,1974593,94.10168221769275,Other
+electric_utility_provider,584,1975177,94.12951346,Civic and utility
+osteopath,577,1975754,94.15701111486536,Health services
+mediterranean_restaurant,574,1976328,94.18436579787748,Restaurant
+assisted_living_facility,574,1976902,94.2117204808896,Health services
+pet_boarding,573,1977475,94.23902750765954,Social & Leisure
+chicken_restaurant,573,1978048,94.26633453442948,Restaurant
+train_station,571,1978619,94.29354624871506,Civic and utility
+eye_care_clinic,571,1979190,94.32075796300064,Health services
+masonry_contractors,566,1979756,94.34773139607532,Civic and utility
+installment_loans,564,1980320,94.37460951666564,Other
+sports_wear,562,1980882,94.40139232477158,Essential needs
+barbecue_restaurant,561,1981443,94.42812747663534,Restaurant
+airport,560,1982003,94.45481497225693,Civic and utility
+meditation_center,549,1982552,94.48097825,Social & Leisure
+temp_agency,544,1983096,94.50690324496118,Civic and utility
+engine_repair_service,540,1983636,94.53263761573916,Civic and utility
+speech_therapist,537,1984173,94.55822901779057,Health services
+specialty_school,531,1984704,94.58353448238888,Education
+corporate_office,530,1985234,94.608792290745,Civic and utility
+home_and_garden,527,1985761,94.6339071303746,Other
+window_supplier,523,1986284,94.65883135,Other
+bike_rentals,523,1986807,94.68375555969637,Social & Leisure
+secretarial_services,521,1987328,94.70858446187286,Civic and utility
+plastic_surgeon,518,1987846,94.73327039532282,Health services
+orthodontist,517,1988363,94.75790867,Health services
+home_decor,515,1988878,94.78245163725404,Other
+automobile_registration_service,504,1989382,94.80647038331344,Civic and utility
+moroccan_restaurant,501,1989883,94.83034616064631,Restaurant
+dermatologist,496,1990379,94.85398366,Health services
+betting_center,489,1990868,94.877287559195,Social & Leisure
+recreational_vehicle_dealer,488,1991356,94.90054380537951,Social & Leisure
+embassy,488,1991844,94.92380005156406,Civic and utility
+jewelry_and_watches_manufacturer,488,1992332,94.94705629774856,Other
+bowling_alley,486,1992818,94.97021723144874,Social & Leisure
+venue_and_event_space,479,1993297,94.99304457145362,Social & Leisure
+beer_wine_and_spirits,476,1993773,95.01572894273195,Other
+personal_care_service,473,1994246,95.03827034528378,Other
+outdoor_gear,473,1994719,95.06081174783556,Other
+lebanese_restaurant,473,1995192,95.08335315038735,Restaurant
+car_sharing,471,1995663,95.1057992404548,Other
+process_servers,468,1996131,95.12810236179573,Civic and utility
+audiovisual_equipment_rental,460,1996591,95.15002423319916,Social & Leisure
+electrical_supply_store,460,1997051,95.17194610460258,Essential needs
+kitchen_and_bath,459,1997510,95.19382031976386,Other
+boat_service_and_repair,459,1997969,95.21569453,Other
+ski_resort,457,1998426,95.23747343760202,Social & Leisure
+horse_trainer,452,1998878,95.259014059068,Social & Leisure
+auction_house,450,1999328,95.28045936804963,Social & Leisure
+farm_equipment_and_supply,448,1999776,95.30180936,Other
+party_and_event_planning,445,2000221,95.32301639231764,Social & Leisure
+security_services,444,2000665,95.34417576384617,Civic and utility
+hiking_trail,443,2001108,95.36528747913252,Social & Leisure
+tire_shop,442,2001550,95.38635153817673,Other
+automotive_consultant,439,2001989,95.40727262849433,Other
+plastic_manufacturer,438,2002427,95.42814606256978,Other
+business_consulting,438,2002865,95.44901949664523,Other
+books_mags_music_and_video,436,2003301,95.46979761823631,Social & Leisure
+local_and_state_government_offices,433,2003734,95.49043277110088,Civic and utility
+brokers,426,2004160,95.51073433027015,Other
+packing_supply,424,2004584,95.53094057695506,Other
+costume_store,419,2005003,95.55090854242908,Social & Leisure
+ophthalmologist,419,2005422,95.57087650790308,Health services
+bus_station,415,2005837,95.59065384840837,Civic and utility
+warehouses,412,2006249,95.61028822018709,Civic and utility
+meat_wholesaler,409,2006658,95.62977962323929,Essential needs
+prenatal_perinatal_care,407,2007065,95.64917571380713,Health services
+woodworking_supply_store,406,2007471,95.66852414813276,Other
+car_inspector,405,2007876,95.68782492621622,Civic and utility
+african_restaurant,403,2008279,95.70703039181532,Restaurant
+marina,396,2008675,95.72590226371916,Social & Leisure
+security_systems,392,2009067,95.74458351065428,Civic and utility
+private_school,390,2009457,95.76316945,Education
+housing_authorities,389,2009846,95.7817077233136,Civic and utility
+performing_arts,388,2010234,95.80019834527997,Social & Leisure
+chimney_sweep,388,2010622,95.81868896724636,Civic and utility
+pool_billiards,386,2011008,95.83708427672836,Social & Leisure
+e_commerce_service,386,2011394,95.85547958621038,Other
+salad_bar,386,2011780,95.8738749,Essential needs
+skin_care,382,2012162,95.89207958020567,Health services
+ear_nose_and_throat,379,2012541,95.91014129599245,Health services
+skilled_nursing,375,2012916,95.92801238681048,Health services
+record_label,373,2013289,95.94578816514414,Social & Leisure
+ski_and_snowboard_shop,364,2013653,95.96313503729816,Social & Leisure
+brake_service_and_repair,362,2014015,95.98038659696785,Other
+firework_retailer,361,2014376,95.99759050039532,Social & Leisure
+plastic_fabrication_company,360,2014736,96.01474674758062,Other
+bubble_tea,358,2015094,96.03180768228157,Other
+home_inspector,358,2015452,96.04886862,Civic and utility
+occupational_safety,356,2015808,96.06583423919906,Civic and utility
+boxing_class,353,2016161,96.08265689,Social & Leisure
+pathologist,353,2016514,96.09947954617914,Health services
+limo_services,348,2016862,96.11606391845828,Social & Leisure
+audiologist,347,2017209,96.13260063449522,Health services
+b2b_cleaning_and_waste_management,346,2017555,96.14908969428996,Civic and utility
+divorce_and_family_law,346,2017901,96.16557875408472,Civic and utility
+rock_climbing_spot,345,2018246,96.18202015763733,Social & Leisure
+farming_services,343,2018589,96.19836624870554,Other
+banks,340,2018929,96.21456937,Essential needs
+luggage_store,338,2019267,96.23067718090452,Essential needs
+zoo,338,2019605,96.24678499076184,Social & Leisure
+human_resource_services,337,2019942,96.26284514437695,Civic and utility
+airport_shuttles,336,2020278,96.27885764174992,Civic and utility
+halal_restaurant,336,2020614,96.29487013912286,Restaurant
+patio_covers,336,2020950,96.31088263649582,Other
+flooring_store,335,2021285,96.3268474776266,Other
+surgeon,334,2021619,96.34276466251517,Health services
+elevator_service,332,2021951,96.35858653,Civic and utility
+automation_services,330,2022281,96.37431309483928,Civic and utility
+fair,330,2022611,96.39003965475912,Social & Leisure
+wood_and_pulp,329,2022940,96.40571856,Other
+auto_customization,329,2023269,96.42139746211448,Other
+b2b_jewelers,327,2023596,96.4369810533078,Other
+boat_dealer,326,2023922,96.45251698825894,Social & Leisure
+garage_door_service,326,2024248,96.46805292321008,Civic and utility
+gun_and_ammo,324,2024572,96.48349354567684,Other
+livestock_breeder,323,2024895,96.49888651190145,Other
+media_news_website,322,2025217,96.51423182188384,Other
+adult_education,319,2025536,96.52943416313973,Education
+environmental_and_ecological_services_for_businesses,318,2025854,96.54458885,Civic and utility
+rv_park,316,2026170,96.55964822068272,Social & Leisure
+cleaning_services,313,2026483,96.57456462448548,Other
+patisserie_cake_shop,311,2026794,96.58938571580391,Other
+health_consultant,310,2027104,96.60415915088014,Health services
+atv_rentals_and_tours,309,2027413,96.61888492971418,Social & Leisure
+distillery,308,2027721,96.63356305230606,Social & Leisure
+truck_dealer,306,2028027,96.64814586241356,Other
+horse_riding,306,2028333,96.66272867252108,Social & Leisure
+radiologist,306,2028639,96.67731148262858,Health services
+korean_restaurant,303,2028942,96.69175132400954,Restaurant
+skate_park,301,2029243,96.70609585290616,Social & Leisure
+comic_books_store,298,2029541,96.7202974130762,Social & Leisure
+arcade,297,2029838,96.73445131700409,Social & Leisure
+adult_entertainment,293,2030131,96.74841459596324,Social & Leisure
+food_consultant,292,2030423,96.76233022,Other
+truck_repair,291,2030714,96.77619818515498,Other
+fishing_club,290,2031004,96.7900184953876,Social & Leisure
+pharmaceutical_companies,290,2031294,96.80383881,Health services
+biotechnology_company,289,2031583,96.81761145961062,Other
+oil_and_gas,288,2031871,96.83133645735886,Civic and utility
+commercial_refrigeration,286,2032157,96.84496614262277,Civic and utility
+handyman,286,2032443,96.85859582788662,Civic and utility
+dairy_farm,285,2032728,96.87217785690832,Other
+circus,281,2033009,96.88556926096128,Social & Leisure
+cannabis_clinic,275,2033284,96.89867472756116,Health services
+indonesian_restaurant,272,2033556,96.91163722543452,Restaurant
+fountain,271,2033827,96.92455206706568,Civic and utility
+nursing_school,271,2034098,96.93746690869683,Education
+comedy_club,270,2034368,96.95033409,Social & Leisure
+b2b_electronic_equipment,270,2034638,96.9632012794748,Civic and utility
+wine_wholesaler,269,2034907,96.97602080862158,Social & Leisure
+mortgage_lender,266,2035173,96.98869736904184,Other
+paintball,266,2035439,97.00137392946208,Social & Leisure
+ethical_grocery,266,2035705,97.01405048988234,Essential needs
+botanical_garden,265,2035970,97.0266793940604,Social & Leisure
+middle_eastern_restaurant,265,2036235,97.03930829823848,Restaurant
+trains,264,2036499,97.05188954617438,Civic and utility
+aromatherapy,264,2036763,97.06447079411026,Health services
+beverage_supplier,262,2037025,97.0769567295618,Essential needs
+scrap_metals,262,2037287,97.08944266501332,Other
+structural_engineer,261,2037548,97.10188094422266,Civic and utility
+hair_removal,259,2037807,97.11422391094764,Health services
+paving_contractor,259,2038066,97.12656687767264,Civic and utility
+wig_store,257,2038323,97.13881453191324,Essential needs
+asian_fusion_restaurant,253,2038576,97.15087156118514,Restaurant
+cooking_school,250,2038826,97.16278562173048,Education
+recreation_vehicle_repair,250,2039076,97.17469968227584,Civic and utility
+private_investigation,248,2039324,97.18651843033682,Other
+armed_forces_branch,248,2039572,97.1983371783978,Civic and utility
+rv_rentals,247,2039819,97.2101082702166,Social & Leisure
+hydraulic_equipment_supplier,247,2040066,97.2218793620354,Civic and utility
+mobile_phone_repair,245,2040311,97.23355514136986,Essential needs
+clothing_company,245,2040556,97.24523092,Other
+distribution_services,244,2040800,97.25685904379657,Civic and utility
+trailer_dealer,244,2041044,97.26848716688885,Other
+videographer,242,2041286,97.28001997749672,Other
+european_restaurant,240,2041526,97.29145747562026,Restaurant
+bus_service,239,2041765,97.30284731750162,Civic and utility
+makeup_artist,238,2042003,97.31418950314078,Social & Leisure
+portuguese_restaurant,238,2042241,97.32553168877996,Restaurant
+bedding_and_bath_stores,235,2042476,97.33673090569258,Essential needs
+shooting_range,234,2042710,97.34788246636305,Social & Leisure
+food_stand,234,2042944,97.35903402703347,Essential needs
+horseback_riding_service,233,2043177,97.37013793146174,Social & Leisure
+choir,233,2043410,97.38124183589,Social & Leisure
+civil_engineers,231,2043641,97.39225042783391,Civic and utility
+race_track,231,2043872,97.40325901977782,Social & Leisure
+canoe_and_kayak_hire_service,230,2044102,97.41421995547954,Social & Leisure
+diagnostic_imaging,227,2044329,97.42503792245472,Health services
+mobility_equipment_services,227,2044556,97.43585588942987,Health services
+restaurant_equipment_and_supply,225,2044781,97.44657854392072,Restaurant
+electricity_supplier,225,2045006,97.45730119841151,Civic and utility
+drugstore,224,2045230,97.46797619666016,Essential needs
+emissions_inspection,223,2045453,97.47860354,Civic and utility
+computer_coaching,223,2045676,97.48923088067306,Education
+furniture_accessory_store,223,2045899,97.49985822267952,Other
+dental_laboratories,222,2046121,97.51043790844378,Health services
+miniature_golf_course,221,2046342,97.52096993796587,Social & Leisure
+spanish_restaurant,221,2046563,97.53150196748796,Restaurant
+synagogue,221,2046784,97.54203399701004,Social & Leisure
+pop_up_shop,220,2047004,97.55251837028996,Social & Leisure
+sightseeing_tour_agency,220,2047224,97.56300274356984,Social & Leisure
+swimming_instructor,219,2047443,97.5734394606076,Social & Leisure
+hypnosis_hypnotherapy,219,2047662,97.58387617764532,Health services
+cardiologist,218,2047880,97.59426523844084,Health services
+cave,217,2048097,97.6046066429942,Social & Leisure
+altering_and_remodeling_contractor,216,2048313,97.61490039,Civic and utility
+wholesale_grocer,215,2048528,97.6251464833744,Essential needs
+urban_farm,215,2048743,97.63539258,Essential needs
+beverage_store,215,2048958,97.64563867,Essential needs
+perfume_store,213,2049171,97.65578944709704,Other
+dj_service,213,2049384,97.66594022668168,Social & Leisure
+carpet_cleaning,213,2049597,97.67609100626632,Civic and utility
+nature_reserve,211,2049808,97.6861464733666,Social & Leisure
+credit_and_debt_counseling,211,2050019,97.69620194046686,Other
+electronic_parts_supplier,208,2050227,97.70611444,Other
+smoothie_juice_bar,208,2050435,97.71602693721432,Social & Leisure
+flea_market,208,2050643,97.72593943558806,Essential needs
+art_restoration,207,2050850,97.7358042777196,Social & Leisure
+specialty_grocery_store,207,2051057,97.74566911985116,Essential needs
+convents_and_monasteries,207,2051264,97.75553396,Social & Leisure
+logging_services,206,2051470,97.76535114787208,Civic and utility
+first_aid_class,205,2051675,97.77512067751928,Health services
+designer_clothing,204,2051879,97.78484255092428,Social & Leisure
+environmental_conservation_and_ecological_organizations,204,2052083,97.79456442432928,Civic and utility
+pizza_delivery_service,201,2052284,97.80414332900772,Other
+irish_pub,201,2052485,97.8137222336862,Social & Leisure
+dog_park,200,2052685,97.82325348212248,Social & Leisure
+machine_and_tool_rentals,199,2052884,97.83273707431658,Civic and utility
+builders,199,2053083,97.84222066651068,Civic and utility
+water_park,198,2053281,97.85165660246258,Social & Leisure
+customized_merchandise,196,2053477,97.86099722593016,Social & Leisure
+copywriting_service,195,2053672,97.87029019315553,Other
+family_counselor,194,2053866,97.8795355,Health services
+cosmetic_dentist,193,2054059,97.88873315887972,Health services
+buffet_restaurant,193,2054252,97.89793081362072,Restaurant
+money_transfer_services,192,2054444,97.90708081211956,Essential needs
+urologist,190,2054634,97.916135498134,Health services
+neurologist,189,2054823,97.92514253,Health services
+water_supplier,187,2055010,97.93405424519422,Civic and utility
+theatrical_productions,186,2055196,97.94291830623996,Social & Leisure
+go_kart_club,186,2055382,97.95178237,Social & Leisure
+life_insurance,184,2055566,97.96055111584708,Other
+boat_tours,184,2055750,97.96931986440846,Social & Leisure
+restaurant_wholesale,182,2055932,97.97799330048548,Restaurant
+flight_school,182,2056114,97.98666673656248,Education
+window_treatment_store,182,2056296,97.99534017,Essential needs
+video_film_production,181,2056477,98.00396595247432,Social & Leisure
+gymnastics_center,180,2056657,98.012544076067,Social & Leisure
+british_restaurant,180,2056837,98.02112219965964,Restaurant
+motorsports_store,179,2057016,98.02965266701013,Social & Leisure
+truck_rentals,179,2057195,98.03818313436058,Civic and utility
+public_school,179,2057374,98.04671360171106,Education
+scuba_diving_center,177,2057551,98.05514875657715,Social & Leisure
+wildlife_sanctuary,176,2057727,98.06353625520109,Social & Leisure
+lodge,176,2057903,98.07192375,Social & Leisure
+sandblasting_service,176,2058079,98.08031125244894,Other
+granite_supplier,175,2058254,98.08865109483068,Essential needs
+oral_surgeon,173,2058427,98.09689562472806,Health services
+fire_and_water_damage_restoration,173,2058600,98.10514015462545,Civic and utility
+it_consultant,173,2058773,98.1133846845228,Other
+pawn_shop,172,2058945,98.12158155817802,Essential needs
+private_association,171,2059116,98.12973077559104,Social & Leisure
+dairy_stores,170,2059286,98.13783233676187,Essential needs
+donuts,170,2059456,98.14593389793272,Other
+freight_forwarding_agency,169,2059625,98.15398780286138,Civic and utility
+lottery_ticket,168,2059793,98.16199405154784,Social & Leisure
+ski_and_snowboard_school,168,2059961,98.17000030023434,Social & Leisure
+superstore,168,2060129,98.17800655,Essential needs
+trophy_shop,168,2060297,98.18601279760728,Social & Leisure
+image_consultant,167,2060464,98.19397139005156,Social & Leisure
+holding_companies,166,2060630,98.20188232625368,Other
+skate_shop,165,2060795,98.20974560621362,Social & Leisure
+junk_removal_and_hauling,165,2060960,98.21760888617356,Civic and utility
+framing_store,165,2061125,98.22547216613349,Other
+baptist_church,162,2061287,98.23319247736686,Social & Leisure
+writing_service,162,2061449,98.24091278860024,Other
+diagnostic_services,160,2061609,98.24853778734926,Health services
+glass_manufacturer,160,2061769,98.25616278609829,Other
+hat_shop,159,2061928,98.26374012860514,Other
+hawaiian_restaurant,158,2062086,98.27126981,Restaurant
+leather_goods,157,2062243,98.27875184489228,Other
+football_stadium,157,2062400,98.28623387491476,Social & Leisure
+karaoke,157,2062557,98.29371590493724,Social & Leisure
+car_window_tinting,156,2062713,98.30115027871751,Other
+aquarium,155,2062868,98.30853699625564,Social & Leisure
+laser_tag,155,2063023,98.31592371379377,Social & Leisure
+auditorium,154,2063177,98.32326278,Social & Leisure
+mechanical_engineers,154,2063331,98.33060183638564,Civic and utility
+appliance_manufacturer,154,2063485,98.33794089768158,Other
+disability_law,153,2063638,98.34523230273533,Civic and utility
+employment_law,152,2063790,98.35247605,Civic and utility
+theme_restaurant,152,2063942,98.35971980035848,Restaurant
+automobile_leasing,150,2064092,98.36686823668568,Other
+outdoor_furniture_store,150,2064242,98.37401667301287,Other
+damage_restoration,150,2064392,98.38116511,Civic and utility
+gay_bar,150,2064542,98.38831355,Social & Leisure
+jazz_and_blues,149,2064691,98.39541432575234,Social & Leisure
+civic_center,147,2064838,98.40241979,Civic and utility
+outlet_store,147,2064985,98.40942526095368,Social & Leisure
+shades_and_blinds,147,2065132,98.41643072855432,Other
+auto_restoration_services,145,2065277,98.42334088367063,Other
+argentine_restaurant,144,2065421,98.43020338254476,Restaurant
+oil_refiners,143,2065564,98.43701823,Civic and utility
+educational_supply_store,142,2065706,98.44378541156644,Education
+maternity_centers,142,2065848,98.4505526,Health services
+pediatric_dentist,142,2065990,98.45731978434596,Health services
+computer_wholesaler,141,2066131,98.46403931449356,Essential needs
+office_cleaning,141,2066272,98.47075884464113,Civic and utility
+prosthetics,139,2066411,98.47738306230434,Health services
+foster_care_services,139,2066550,98.48400727996756,Civic and utility
+swiss_restaurant,139,2066689,98.49063149763076,Restaurant
+collection_agencies,139,2066828,98.497255715294,Civic and utility
+astrologer,138,2066966,98.50383227671502,Other
+vending_machine_supplier,138,2067104,98.51040883813606,Other
+auto_insurance,137,2067241,98.51693774,Other
+personal_assistant,137,2067378,98.52346664849377,Other
+medical_transportation,137,2067515,98.52999555,Health services
+poke,136,2067651,98.53647680260929,Social & Leisure
+specialty_foods,136,2067787,98.54295805154597,Essential needs
+public_health_clinic,135,2067922,98.54939164424044,Health services
+jail_and_prison,135,2068057,98.55582523693492,Civic and utility
+blood_and_plasma_donation_center,134,2068191,98.56221117338724,Health services
+bookkeeper,134,2068325,98.56859710983954,Other
+law_enforcement,134,2068459,98.57498304629183,Civic and utility
+marriage_or_relationship_counselor,134,2068593,98.58136898274417,Health services
+merchandising_service,134,2068727,98.58775491919646,Other
+ice_skating_rink,133,2068860,98.5940931994066,Social & Leisure
+b2b_machinery_and_tools,133,2068993,98.60043147961672,Other
+printing_equipment_and_supply,130,2069123,98.60662679,Civic and utility
+educational_research_institute,129,2069252,98.61277444634167,Education
+guest_house,129,2069381,98.6189221,Social & Leisure
+domestic_business_and_trade_organizations,129,2069510,98.62506975682447,Civic and utility
+iron_work,128,2069638,98.63116976,Civic and utility
+basketball_court,128,2069766,98.63726975482294,Social & Leisure
+cards_and_stationery_store,127,2069893,98.64332209757995,Other
+it_support_snd_service,127,2070020,98.64937444,Civic and utility
+bartender,125,2070145,98.65533147060968,Social & Leisure
+orthopedic_shoe_store,124,2070269,98.66124084464018,Essential needs
+speakeasy,124,2070393,98.66715021867066,Social & Leisure
+party_equipment_rental,124,2070517,98.67305959270116,Social & Leisure
+hot_tubs_and_pools,123,2070640,98.67892131048949,Social & Leisure
+session_photography,123,2070763,98.6847830282778,Social & Leisure
+apartments,122,2070885,98.69059708982392,Other
+watch_store,122,2071007,98.69641115137004,Social & Leisure
+passport_and_visa_services,121,2071128,98.70217756,Civic and utility
+kitchen_remodeling,121,2071249,98.70794396197796,Other
+energy_management_and_conservation_consultants,119,2071368,98.71361505479751,Civic and utility
+beach_equipment_rentals,118,2071486,98.71923849137494,Social & Leisure
+esports_league,117,2071603,98.72481427171016,Social & Leisure
+motor_freight_trucking,117,2071720,98.73039005204538,Civic and utility
+sex_therapist,116,2071836,98.73591817613844,Health services
+book_magazine_distribution,115,2071951,98.74139864398929,Other
+souvenir_shop,115,2072066,98.74687911184014,Social & Leisure
+gutter_service,115,2072181,98.75235958,Civic and utility
+rug_store,114,2072295,98.75779239129967,Other
+hotel_supply_service,113,2072408,98.76317754666618,Social & Leisure
+visitor_center,113,2072521,98.76856270203268,Civic and utility
+stone_and_masonry,113,2072634,98.77394785739918,Other
+criminal_defense_law,113,2072747,98.77933301276568,Civic and utility
+business_office_supplies_and_stationery,111,2072858,98.7846228556478,Other
+hospice,110,2072968,98.78986504228776,Health services
+saw_mill,110,2073078,98.79510722892772,Other
+hot_air_balloons_tour,109,2073187,98.80030175932548,Social & Leisure
+pets,109,2073296,98.80549628972328,Other
+halfway_house,108,2073404,98.81064316387884,Other
+traditional_clothing,108,2073512,98.81579003803444,Essential needs
+powder_coating_service,108,2073620,98.82093691219004,Other
+metal_plating_service,108,2073728,98.82608378634563,Civic and utility
+boot_camp,108,2073836,98.83123066050122,Education
+motorcycle_rentals,108,2073944,98.83637753,Social & Leisure
+sports_bar,107,2074051,98.84147675257024,Social & Leisure
+window_washing,106,2074157,98.84652831424144,Civic and utility
+business_equipment_and_supply,106,2074263,98.85157987591268,Other
+data_recovery,106,2074369,98.85663143758391,Civic and utility
+bus_rentals,105,2074474,98.86163534301296,Civic and utility
+demolition_service,104,2074578,98.8665915921998,Civic and utility
+laundry_services,104,2074682,98.87154784138669,Essential needs
+translation_services,104,2074786,98.87650409057356,Civic and utility
+septic_services,104,2074890,98.8814603397604,Civic and utility
+buddhist_temple,104,2074994,98.88641658894728,Social & Leisure
+soccer_stadium,103,2075097,98.89132518189196,Social & Leisure
+real_estate_investment,102,2075199,98.89618611859449,Other
+steel_fabricators,101,2075300,98.9009994,Civic and utility
+handicraft_shop,100,2075400,98.90576502327292,Social & Leisure
+medical_spa,100,2075500,98.91053064749109,Health services
+health_department,100,2075600,98.9152962717092,Civic and utility
+car_broker,100,2075700,98.92006189592736,Other
+airlines,99,2075799,98.92477986,Social & Leisure
+caribbean_restaurant,99,2075898,98.92949783187926,Restaurant
+frozen_yoghurt_shop,99,2075997,98.93421579985522,Other
+housing_cooperative,97,2076094,98.9388384553468,Other
+auto_upholstery,97,2076191,98.9434611108384,Other
+home_theater_systems_stores,96,2076287,98.94803611008784,Social & Leisure
+social_security_services,94,2076381,98.95251579685288,Civic and utility
+gold_buyer,93,2076474,98.95694782737576,Other
+custom_clothing,92,2076566,98.96133220165645,Essential needs
+bathroom_remodeling,91,2076657,98.96566891969492,Other
+nanny_services,91,2076748,98.97000563773344,Social & Leisure
+mediator,89,2076837,98.97424704,Civic and utility
+mining,89,2076926,98.97848844884174,Civic and utility
+publicity_service,89,2077015,98.98272985439588,Other
+animal_hospital,89,2077104,98.98697125995002,Health services
+promotional_products_and_services,89,2077193,98.99121266550416,Other
+tattoo,88,2077281,98.99540641481612,Social & Leisure
+internet_cafe,88,2077369,98.99960016,Social & Leisure
+bagel_shop,88,2077457,99.00379391344006,Essential needs
+fish_farm,87,2077544,99.00794000650984,Other
+professional_sports_team,87,2077631,99.01208609957962,Social & Leisure
+stone_supplier,86,2077717,99.01618453640722,Other
+psychic_medium,86,2077803,99.02028297323484,Social & Leisure
+door_sales_service,86,2077889,99.02438141006242,Other
+mobile_home_dealer,86,2077975,99.02847984689002,Other
+well_drilling,86,2078061,99.03257828371764,Civic and utility
+educational_camp,85,2078146,99.03662906430304,Education
+railroad_freight,85,2078231,99.04067984488849,Civic and utility
+abuse_and_addiction_treatment,85,2078316,99.04473062547387,Health services
+grain_production,84,2078400,99.04873374981712,Essential needs
+japanese_confectionery_shop,84,2078484,99.05273687416036,Essential needs
+massage_school,84,2078568,99.05674,Education
+pipeline_transportation,84,2078652,99.06074312284684,Civic and utility
+teeth_whitening,84,2078736,99.06474624719009,Health services
+consultant_and_general_service,84,2078820,99.06874937,Civic and utility
+environmental_testing,84,2078904,99.07275249587654,Health services
+personal_injury_law,83,2078987,99.07670796,Civic and utility
+trailer_rentals,83,2079070,99.08066343207864,Other
+waterfall,83,2079153,99.0846189,Social & Leisure
+hair_replacement,83,2079236,99.08857436828076,Health services
+crops_production,82,2079318,99.09248218013964,Other
+insulation_installation,82,2079400,99.09638999,Civic and utility
+hair_supply_stores,82,2079482,99.1002978,Other
+ferry_boat_company,82,2079564,99.10420561571628,Civic and utility
+threading_service,82,2079646,99.10811342757512,Other
+department_of_motor_vehicles,81,2079727,99.11197358319184,Civic and utility
+safety_equipment,81,2079808,99.11583373880852,Other
+logging_contractor,81,2079889,99.11969389442524,Other
+research_institute,81,2079970,99.12355405004192,Education
+canal,80,2080050,99.12736654941642,Civic and utility
+cricket_ground,80,2080130,99.13117904879094,Social & Leisure
+archery_range,80,2080210,99.13499154816546,Social & Leisure
+grain_elevators,80,2080290,99.13880404753996,Civic and utility
+cosmetology_school,79,2080369,99.14256889,Education
+commissioned_artist,78,2080447,99.14628607756244,Social & Leisure
+latin_american_restaurant,78,2080525,99.15000326,Restaurant
+homeless_shelter,77,2080602,99.15367279510056,Essential needs
+baby_gear_and_furniture,77,2080679,99.15734232574852,Essential needs
+brazilian_restaurant,77,2080756,99.16101186,Restaurant
+syrian_restaurant,76,2080832,99.16463373080228,Restaurant
+swimwear_store,76,2080908,99.16825560520806,Other
+musician,76,2080984,99.17187747961384,Social & Leisure
+midwife,75,2081059,99.17545169777743,Health services
+plasterer,74,2081133,99.17897825969888,Civic and utility
+service_apartments,74,2081207,99.18250482,Other
+ethiopian_restaurant,73,2081280,99.18598372729954,Restaurant
+commercial_vehicle_dealer,73,2081353,99.1894626329788,Other
+petting_zoo,73,2081426,99.19294153865803,Social & Leisure
+personal_chef,72,2081498,99.19637278809508,Social & Leisure
+boat_parts_and_accessories,72,2081570,99.19980403753216,Other
+dumpster_rentals,72,2081642,99.20323528696922,Civic and utility
+road_contractor,72,2081714,99.20666653640627,Civic and utility
+national_park,71,2081785,99.21005012960114,Social & Leisure
+inspection_services,71,2081856,99.21343372279604,Civic and utility
+reptile_shop,71,2081927,99.21681731599092,Social & Leisure
+vacation_rental_agents,71,2081998,99.2202009091858,Social & Leisure
+tax_law,71,2082069,99.22358450238067,Civic and utility
+sky_diving,71,2082140,99.22696809557556,Social & Leisure
+motel,70,2082210,99.23030403252824,Other
+electronics_repair_shop,69,2082279,99.23359231323876,Other
+forestry_service,68,2082347,99.23683293770708,Civic and utility
+craft_shop,68,2082415,99.24007356217544,Social & Leisure
+day_spa,68,2082483,99.24331418664376,Social & Leisure
+taco_restaurant,68,2082551,99.24655481111208,Restaurant
+medical_school,68,2082619,99.24979543558044,Education
+airline,67,2082686,99.25298840380658,Social & Leisure
+metal_materials_and_experts,67,2082753,99.25618137203274,Civic and utility
+immigration_law,67,2082820,99.25937434,Civic and utility
+sports_school,67,2082887,99.26256730848505,Education
+b2b_sporting_and_recreation_goods,67,2082954,99.26576028,Other
+pentecostal_church,66,2083020,99.26890558869518,Social & Leisure
+fencing_club,66,2083086,99.27205090067916,Social & Leisure
+wholesale_florist,66,2083152,99.27519621266312,Other
+awning_supplier,66,2083218,99.27834152464708,Other
+piano_services,66,2083284,99.28148683663106,Social & Leisure
+clinical_laboratories,66,2083350,99.28463214861505,Health services
+stucco_services,65,2083415,99.28772980435684,Civic and utility
+criminal_deense_law,65,2083480,99.2908274600986,Civic and utility
+hair_extensions,65,2083545,99.2939251158404,Social & Leisure
+health_coach,64,2083609,99.29697511534002,Health services
+b2b_equipment_maintenance_and_repair,64,2083673,99.30002511483964,Civic and utility
+ice_cream_and_frozen_yoghurt,64,2083737,99.30307511433924,Other
+forest,64,2083801,99.30612511383885,Social & Leisure
+peruvian_restaurant,63,2083864,99.30912745709628,Restaurant
+game_publisher,63,2083927,99.31212980035372,Social & Leisure
+livestock_feed_and_supply_store,63,2083990,99.31513214361112,Other
+bus_tours,63,2084053,99.31813448686856,Social & Leisure
+gastroenterologist,63,2084116,99.32113683,Health services
+telemarketing_services,63,2084179,99.3241391733834,Civic and utility
+furniture_wholesalers,62,2084241,99.32709386039866,Other
+waxing,62,2084303,99.33004854741392,Social & Leisure
+occupational_medicine,62,2084365,99.33300323442916,Health services
+surfing,62,2084427,99.33595792,Social & Leisure
+drive_in_theater,62,2084489,99.33891260845964,Social & Leisure
+horse_equipment_shop,62,2084551,99.3418673,Social & Leisure
+tai_chi_studio,62,2084613,99.34482198249016,Social & Leisure
+rheumatologist,62,2084675,99.34777667,Health services
+home_staging,61,2084736,99.35068370027844,Other
+gelato,61,2084797,99.35359073105153,Other
+embroidery_and_crochet,61,2084858,99.35649776182458,Social & Leisure
+hindu_temple,61,2084919,99.35940479259764,Social & Leisure
+golf_instructor,60,2084979,99.36226416712852,Social & Leisure
+farming_equipment_store,60,2085039,99.3651235416594,Other
+public_transportation,60,2085099,99.36798292,Civic and utility
+opera_and_ballet,60,2085159,99.3708422907212,Social & Leisure
+marble_and_granite_professionals,60,2085219,99.37370166525209,Other
+recording_and_rehearsal_studio,59,2085278,99.37651338354078,Social & Leisure
+rest_areas,59,2085337,99.37932510182948,Other
+dental_supply_store,59,2085396,99.38213682011818,Health services
+observatory,58,2085454,99.38490088,Social & Leisure
+pulmonologist,58,2085512,99.38766494421122,Health services
+lawn_mower_store,58,2085570,99.39042900625776,Other
+knitting_supply,58,2085628,99.39319306830429,Other
+pakistani_restaurant,57,2085685,99.39590947,Restaurant
+coal_and_coke,57,2085742,99.39862587991294,Other
+surf_shop,57,2085799,99.40134228571728,Social & Leisure
+oncologist,57,2085856,99.40405869152164,Health services
+business_brokers,56,2085912,99.40672744108376,Other
+poultry_farm,56,2085968,99.40939619064594,Other
+allergist,56,2086024,99.41206494,Health services
+animal_rescue_service,56,2086080,99.41473368977026,Health services
+vinyl_record_store,55,2086135,99.41735478309025,Social & Leisure
+himalayan_nepalese_restaurant,55,2086190,99.41997588,Restaurant
+pan_asian_restaurant,55,2086245,99.42259696973018,Restaurant
+sculpture_statue,55,2086300,99.42521806305017,Social & Leisure
+food_safety_training,55,2086355,99.42783915637014,Education
+commercial_printer,55,2086410,99.43046024969011,Civic and utility
+cajun_creole_restaurant,54,2086464,99.43303368676791,Restaurant
+piercing,54,2086518,99.43560712,Social & Leisure
+junkyard,54,2086572,99.43818056092351,Civic and utility
+test_preparation,54,2086626,99.440754,Education
+package_locker,53,2086679,99.44327977883692,Civic and utility
+clothing_rental,53,2086732,99.44580555967252,Other
+ceiling_service,53,2086785,99.44833134050816,Civic and utility
+bookbinding,52,2086837,99.45080946510156,Social & Leisure
+persian_iranian_restaurant,52,2086889,99.453287589695,Restaurant
+event_technology_service,52,2086941,99.45576571428845,Social & Leisure
+construction_management,52,2086993,99.45824383888188,Civic and utility
+art_supply_store,52,2087045,99.46072196347532,Social & Leisure
+science_museum,52,2087097,99.46320008806872,Social & Leisure
+health_market,52,2087149,99.46567821266216,Essential needs
+adult_store,51,2087200,99.46810868101342,Social & Leisure
+b2b_oil_and_gas_extraction_and_services,51,2087251,99.47053914936468,Civic and utility
+laboratory,51,2087302,99.47296961771592,Health services
+cannabis_dispensary,51,2087353,99.47540008606718,Other
+scuba_diving_instruction,51,2087404,99.47783055441842,Social & Leisure
+produce_wholesaler,50,2087454,99.48021337,Essential needs
+paper_mill,50,2087504,99.48259617863656,Civic and utility
+b2b_rubber_and_plastics,50,2087554,99.48497899074565,Other
+b2b_apparel,50,2087604,99.4873618,Other
+luggage_storage,50,2087654,99.48974461496375,Civic and utility
+car_stereo_store,50,2087704,99.49212742707284,Social & Leisure
+genealogists,50,2087754,99.49451024,Other
+public_toilet,50,2087804,99.49689305129098,Essential needs
+anglican_church,49,2087853,99.49922820715788,Social & Leisure
+logging_equipment_and_supplies,49,2087902,99.50156336302476,Other
+hot_dog_restaurant,49,2087951,99.50389851889166,Restaurant
+family_service_center,48,2087999,99.50618601851636,Civic and utility
+emergency_room,48,2088047,99.50847351814106,Health services
+packing_services,48,2088095,99.51076101776576,Other
+cycling_classes,48,2088143,99.51304851739047,Social & Leisure
+b2b_food_products,48,2088191,99.5153360170152,Other
+child_protection_service,47,2088238,99.51757586039771,Civic and utility
+traffic_school,47,2088285,99.51981570378024,Education
+noodles_restaurant,47,2088332,99.52205554716276,Restaurant
+art_restoration_service,47,2088379,99.52429539054528,Social & Leisure
+cleaning_products_supplier,47,2088426,99.52653523392782,Other
+business_signage,47,2088473,99.52877507731034,Civic and utility
+theaters_and_performance_venues,46,2088519,99.53096726445068,Social & Leisure
+mobile_home_park,46,2088565,99.53315945159102,Other
+hearing_aid_provider,46,2088611,99.53535163873136,Health services
+board_of_education_offices,46,2088657,99.53754382587172,Education
+golf_club,46,2088703,99.53973601301206,Social & Leisure
+international_grocery_store,46,2088749,99.5419282001524,Essential needs
+soup_restaurant,46,2088795,99.54412038729276,Restaurant
+volleyball_court,45,2088840,99.54626491819091,Social & Leisure
+social_club,45,2088885,99.54840944908906,Social & Leisure
+private_tutor,45,2088930,99.55055397998724,Education
+coworking_space,44,2088974,99.55265085464322,Social & Leisure
+volunteer_association,44,2089018,99.55474773,Civic and utility
+sports_medicine,43,2089061,99.55679695,Health services
+comfort_food_restaurant,43,2089104,99.55884617,Restaurant
+texmex_restaurant,43,2089147,99.56089538,Restaurant
+wheel_and_rim_repair,43,2089190,99.5629446,Other
+salsa_club,42,2089232,99.56494616512602,Social & Leisure
+shipping_collection_services,42,2089274,99.56694772729765,Civic and utility
+executive_search_consultants,42,2089316,99.56894928946926,Other
+dance_wear,42,2089358,99.57095085164087,Social & Leisure
+glass_blowing,42,2089400,99.57295241,Social & Leisure
+mattress_manufacturing,42,2089442,99.57495397598412,Other
+shredding_services,42,2089484,99.57695553815572,Civic and utility
+inventory_control_service,42,2089526,99.57895710032734,Civic and utility
+social_welfare_center,42,2089568,99.58095866249896,Civic and utility
+homeopathic_medicine,42,2089610,99.5829602246706,Health services
+estate_planning_law,42,2089652,99.5849617868422,Civic and utility
+diving_center,41,2089693,99.58691569277164,Social & Leisure
+crane_services,41,2089734,99.58886959870108,Civic and utility
+motorcycle_manufacturer,41,2089775,99.59082350463052,Other
+fondue_restaurant,41,2089816,99.59277741055996,Restaurant
+welding_supply_store,41,2089857,99.5947313164894,Other
+coach_bus,41,2089898,99.59668522241884,Civic and utility
+endocrinologist,41,2089939,99.59863912834828,Health services
+patent_law,41,2089980,99.60059303427772,Civic and utility
+magician,41,2090021,99.60254694020712,Social & Leisure
+afghan_restaurant,40,2090061,99.60445319,Restaurant
+squash_court,40,2090101,99.60635943958168,Social & Leisure
+b2b_furniture_and_housewares,40,2090141,99.60826568926892,Other
+pet_adoption,39,2090180,99.61012428271398,Social & Leisure
+planetarium,38,2090218,99.61193521991687,Social & Leisure
+deck_and_railing_sales_service,38,2090256,99.61374615711978,Other
+foot_care,38,2090294,99.61555709432264,Health services
+inn,38,2090332,99.61736803152556,Social & Leisure
+cambodian_restaurant,38,2090370,99.61917896872843,Restaurant
+candle_store,38,2090408,99.62098990593134,Other
+business_storage_and_transportation,38,2090446,99.62280084313424,Civic and utility
+bankruptcy_law,38,2090484,99.62461178033712,Civic and utility
+kiosk,37,2090521,99.62637506129784,Other
+rehabilitation_center,37,2090558,99.62813834225857,Health services
+welders,37,2090595,99.62990162321928,Civic and utility
+uniform_store,37,2090632,99.63166490417996,Other
+health_food_restaurant,37,2090669,99.63342818514067,Restaurant
+esports_team,37,2090706,99.63519147,Social & Leisure
+shutters,36,2090742,99.63690709081992,Essential needs
+ip_and_internet_law,36,2090778,99.63862271553846,Civic and utility
+real_estate_law,36,2090814,99.640338340257,Civic and utility
+prosthodontist,35,2090849,99.64200630873334,Health services
+federal_government_offices,35,2090884,99.64367428,Civic and utility
+taxidermist,35,2090919,99.64534224568604,Other
+piano_store,35,2090954,99.6470102141624,Social & Leisure
+vehicle_shipping,35,2090989,99.64867818263872,Civic and utility
+photo_booth_rental,35,2091024,99.65034615111507,Social & Leisure
+geological_services,34,2091058,99.65196646334924,Civic and utility
+web_hosting_service,34,2091092,99.65358677558342,Civic and utility
+sikh_temple,34,2091126,99.6552070878176,Social & Leisure
+railway_service,34,2091160,99.65682740005175,Civic and utility
+automotive_storage_facility,34,2091194,99.65844771228592,Civic and utility
+social_media_company,34,2091228,99.66006802452009,Other
+mobile_phone_accessories,33,2091261,99.66164068051208,Other
+wellness_program,33,2091294,99.66321333650406,Health services
+arabian_restaurant,33,2091327,99.66478599249604,Restaurant
+festival,33,2091360,99.66635864848804,Social & Leisure
+home_organization,32,2091392,99.66788364823783,Other
+firewood,32,2091424,99.66940864798764,Other
+bingo_hall,32,2091456,99.67093364773744,Social & Leisure
+house_sitting,32,2091488,99.67245864748725,Social & Leisure
+t_shirt_store,32,2091520,99.67398364723708,Essential needs
+business_schools,32,2091552,99.67550864698688,Education
+pool_and_hot_tub_services,31,2091583,99.67698599049449,Social & Leisure
+fishing_charter,31,2091614,99.67846333,Social & Leisure
+child_psychiatrist,31,2091645,99.67994067750972,Health services
+ride_sharing,31,2091676,99.68141802101736,Social & Leisure
+orthotics,31,2091707,99.68289536452498,Health services
+waterproofing,31,2091738,99.68437271,Civic and utility
+pain_management,31,2091769,99.68585005154024,Health services
+herbal_shop,31,2091800,99.68732739504786,Essential needs
+pension,31,2091831,99.68880473855548,Civic and utility
+plastic_company,31,2091862,99.69028208206308,Other
+polish_restaurant,31,2091893,99.69175942557072,Restaurant
+food_and_beverage_exporter,31,2091924,99.69323676907834,Other
+anesthesiologist,31,2091955,99.69471411258596,Health services
+fertility,31,2091986,99.6961914560936,Health services
+women's_health_clinic,30,2092016,99.69762114335904,Health services
+blacksmiths,30,2092046,99.69905083062449,Other
+radio_and_television_commercials,30,2092076,99.70048051788991,Other
+paddleboarding_center,30,2092106,99.70191020515536,Social & Leisure
+cosmetic_surgeon,30,2092136,99.70333989,Health services
+tire_repair_shop,30,2092166,99.70476957968624,Other
+public_market,30,2092196,99.70619926695169,Essential needs
+kosher_restaurant,30,2092226,99.70762895421711,Restaurant
+oil_and_gas_field_equipment_and_services,30,2092256,99.70905864148256,Civic and utility
+after_school_program,30,2092286,99.71048833,Education
+university_housing,29,2092315,99.71187035977128,Education
+wills_trusts_and_probate,29,2092344,99.71325239079452,Civic and utility
+historical_tours,29,2092373,99.7146344218178,Social & Leisure
+valet_service,29,2092402,99.71601645284105,Social & Leisure
+permanent_makeup,29,2092431,99.71739848,Social & Leisure
+state_museum,29,2092460,99.71878051488756,Social & Leisure
+general_festivals,29,2092489,99.72016254591082,Social & Leisure
+greengrocer,29,2092518,99.72154458,Essential needs
+b2b_scientific_equipment,29,2092547,99.72292660795736,Other
+racquetball_court,28,2092575,99.72426098273844,Social & Leisure
+mountain_bike_trails,28,2092603,99.72559535751952,Social & Leisure
+3d_printing_service,28,2092631,99.7269297323006,Other
+bottled_water_company,28,2092659,99.72826410708169,Other
+health_and_wellness_club,28,2092687,99.72959848186277,Social & Leisure
+natural_gas_supplier,28,2092715,99.73093285664385,Civic and utility
+pipe_supplier,27,2092742,99.73221957518273,Other
+lawn_service,27,2092769,99.73350629372162,Other
+tennis_stadium,27,2092796,99.73479301226052,Social & Leisure
+champagne_bar,27,2092823,99.73607973079942,Social & Leisure
+falafel_restaurant,27,2092850,99.73736644933832,Restaurant
+religious_school,27,2092877,99.73865316787722,Education
+sport_equipment_rentals,26,2092903,99.73989223017394,Social & Leisure
+community_museum,26,2092929,99.74113129247066,Social & Leisure
+condominium,26,2092955,99.74237035476736,Other
+track_stadium,26,2092981,99.74360941706408,Social & Leisure
+business_records_storage_and_management,26,2093007,99.74484848,Civic and utility
+custom_t_shirt_store,26,2093033,99.74608754165752,Social & Leisure
+computer_museum,26,2093059,99.74732660395424,Social & Leisure
+electrical_wholesaler,25,2093084,99.74851801000877,Civic and utility
+safe_store,25,2093109,99.74970942,Essential needs
+reiki,25,2093134,99.75090082211784,Health services
+b2b_energy_mining,25,2093159,99.75209222817236,Civic and utility
+archaeological_services,25,2093184,99.75328363,Social & Leisure
+grilling_equipment,25,2093209,99.75447504028143,Other
+surgical_center,25,2093234,99.75566644633598,Health services
+bathroom_fixture_stores,25,2093259,99.75685785239052,Other
+rugby_pitch,25,2093284,99.75804925844504,Social & Leisure
+clock_repair_service,25,2093309,99.7592406644996,Other
+animation_studio,25,2093334,99.76043207055412,Social & Leisure
+balloon_services,25,2093359,99.76162347660863,Social & Leisure
+talent_agency,25,2093384,99.7628148826632,Social & Leisure
+bangladeshi_restaurant,25,2093409,99.76400628871772,Restaurant
+unemployment_office,24,2093433,99.76515003853008,Civic and utility
+pressure_washing,24,2093457,99.76629378834244,Other
+importer_and_exporter,24,2093481,99.76743753815478,Civic and utility
+tableware_supplier,24,2093505,99.76858128796712,Other
+fitness_exercise_equipment,24,2093529,99.76972504,Social & Leisure
+driving_range,24,2093553,99.77086878759184,Social & Leisure
+importers,24,2093577,99.77201254,Other
+optical_wholesaler,24,2093601,99.77315628721657,Other
+park_and_rides,24,2093625,99.77430004,Civic and utility
+hospital_equipment_and_supplies,24,2093649,99.77544378684124,Health services
+telephone_services,24,2093673,99.7765875366536,Civic and utility
+apartment_agent,24,2093697,99.77773128646596,Other
+international_restaurant,24,2093721,99.77887503627832,Restaurant
+mission,24,2093745,99.78001878609066,Civic and utility
+soccer_club,23,2093768,99.78111487966083,Social & Leisure
+battery_store,23,2093791,99.78221097323102,Essential needs
+fish_farms_and_hatcheries,23,2093814,99.7833070668012,Other
+scooter_dealers,23,2093837,99.78440316037135,Social & Leisure
+heliports,23,2093860,99.78549925394154,Civic and utility
+trade_fair,23,2093883,99.78659534751168,Social & Leisure
+atv_recreation_park,23,2093906,99.78769144108188,Social & Leisure
+ticket_sales,23,2093929,99.78878753465204,Social & Leisure
+pet_training,23,2093952,99.7898836282222,Social & Leisure
+emergency_pet_hospital,23,2093975,99.79097972,Health services
+contract_law,23,2093998,99.79207581536257,Other
+engraving,23,2094021,99.79317190893272,Other
+alcohol_and_drug_treatment_centers,23,2094044,99.794268,Health services
+soul_food,23,2094067,99.79536409607309,Social & Leisure
+russian_restaurant,23,2094090,99.79646018964326,Restaurant
+amateur_sports_league,22,2094112,99.79750862697124,Social & Leisure
+public_bath_houses,22,2094134,99.79855706429925,Essential needs
+wallpaper_store,22,2094156,99.79960550162724,Other
+frozen_foods,22,2094178,99.8006539389552,Essential needs
+tools_wholesaler,22,2094200,99.80170238,Essential needs
+cartooning_museum,22,2094222,99.80275081,Social & Leisure
+endodontist,22,2094244,99.80379925093918,Health services
+power_plants_and_power_plant_service,22,2094266,99.80484768826716,Civic and utility
+furniture_repair,22,2094288,99.80589612559515,Other
+handbag_stores,22,2094310,99.80694456292316,Social & Leisure
+cement_supplier,22,2094332,99.80799300025114,Other
+chimney_service,22,2094354,99.80904143757914,Civic and utility
+music_production_services,22,2094376,99.81008987490712,Social & Leisure
+eastern_european_restaurant,22,2094398,99.81113831223512,Restaurant
+golf_equipment,22,2094420,99.81218674956312,Social & Leisure
+tv_mounting,22,2094442,99.81323519,Other
+self_catering_accommodation,22,2094464,99.81428362421909,Social & Leisure
+adventure_sports_center,22,2094486,99.81533206154708,Social & Leisure
+sauna,22,2094508,99.81638049887508,Social & Leisure
+bail_bonds_service,21,2094529,99.81738127996088,Civic and utility
+bounce_house_rental,21,2094550,99.81838206104668,Social & Leisure
+modern_art_museum,21,2094571,99.81938284,Social & Leisure
+panamanian_restaurant,21,2094592,99.82038362,Restaurant
+christmas_trees,21,2094613,99.82138440430413,Social & Leisure
+baseball_field,21,2094634,99.82238518538992,Social & Leisure
+brasserie,21,2094655,99.82338596647574,Social & Leisure
+rugby_stadium,21,2094676,99.82438674756156,Social & Leisure
+karate_club,21,2094697,99.82538752864735,Social & Leisure
+agriculture_association,21,2094718,99.82638830973318,Civic and utility
+b2b_forklift_dealers,21,2094739,99.82738909081895,Civic and utility
+periodontist,21,2094760,99.8283898719048,Health services
+taekwondo_club,21,2094781,99.82939065,Social & Leisure
+ranch,21,2094802,99.83039143,Other
+forklift_dealer,21,2094823,99.83139221516224,Other
+cemeteries,21,2094844,99.83239299624802,Civic and utility
+bistro,21,2094865,99.83339377733384,Social & Leisure
+debt_relief_services,21,2094886,99.83439455841965,Civic and utility
+transmission_repair,21,2094907,99.83539533950544,Other
+utility_service,21,2094928,99.83639612059126,Civic and utility
+sand_and_gravel_supplier,20,2094948,99.83734925,Other
+honey_farm_shop,20,2094968,99.83830237027853,Essential needs
+herb_and_spice_shop,20,2094988,99.83925549512216,Essential needs
+hydraulic_repair_service,20,2095008,99.84020861996578,Civic and utility
+colombian_restaurant,20,2095028,99.84116174,Restaurant
+taiwanese_restaurant,20,2095048,99.84211486965305,Restaurant
+night_market,20,2095068,99.84306799449666,Social & Leisure
+business_law,20,2095088,99.84402111934028,Education
+dim_sum_restaurant,20,2095108,99.84497424418392,Restaurant
+bank_equipment_service,20,2095128,99.84592736902756,Other
+plus_size_clothing,20,2095148,99.84688049387115,Essential needs
+automotive_wheel_polishing_service,19,2095167,99.8477859624726,Other
+archery_shop,19,2095186,99.84869143107406,Social & Leisure
+egyptian_restaurant,19,2095205,99.8495969,Restaurant
+airport_terminal,19,2095224,99.85050236827696,Civic and utility
+filipino_restaurant,19,2095243,99.8514078368784,Restaurant
+laser_eye_surgery_lasik,19,2095262,99.85231330547984,Health services
+exporters,19,2095281,99.85321877,Other
+nephrologist,19,2095300,99.85412424268274,Health services
+romanian_restaurant,19,2095319,99.8550297112842,Restaurant
+outdoor_advertising,19,2095338,99.85593517988563,Other
+crisis_intervention_services,18,2095356,99.85679299,Health services
+laboratory_equipment_supplier,18,2095374,99.85765080460418,Health services
+goldsmith,18,2095392,99.85850861696342,Other
+emergency_service,18,2095410,99.85936642932268,Civic and utility
+quarries,18,2095428,99.86022424168196,Other
+video_and_video_game_rentals,18,2095446,99.86108205404123,Social & Leisure
+israeli_restaurant,18,2095464,99.86193986640048,Restaurant
+hotel_bar,18,2095482,99.86279767875976,Social & Leisure
+chambers_of_commerce,17,2095499,99.86360783487685,Civic and utility
+dialysis_clinic,17,2095516,99.86441799099391,Health services
+yoga_instructor,17,2095533,99.865228147111,Social & Leisure
+sri_lankan_restaurant,17,2095550,99.8660383,Restaurant
+infectious_disease_specialist,17,2095567,99.86684845934516,Health services
+dental_hygienist,17,2095584,99.86765861546226,Health services
+auto_security,17,2095601,99.86846877157934,Civic and utility
+pig_farm,17,2095618,99.86927892769644,Other
+b2b_tractor_dealers,17,2095635,99.87008908381353,Other
+fabric_wholesaler,16,2095651,99.87085158368842,Other
+b2b_medical_support_services,16,2095667,99.87161408356332,Health services
+drama_school,16,2095683,99.8723765834382,Education
+bags_luggage_company,16,2095699,99.87313908331312,Other
+cuban_restaurant,16,2095715,99.87390158318802,Restaurant
+gluten_free_restaurant,16,2095731,99.87466408306292,Restaurant
+maternity_wear,16,2095747,99.87542658293782,Essential needs
+hair_loss_center,16,2095763,99.87618908281272,Health services
+industrial_cleaning_services,16,2095779,99.87695158268764,Civic and utility
+cotton_mill,16,2095795,99.87771408256252,Other
+payroll_services,16,2095811,99.87847658243744,Civic and utility
+southern_restaurant,15,2095826,99.87919142607016,Restaurant
+food_and_beverage_consultant,15,2095841,99.87990626970289,Other
+palace,15,2095856,99.88062111,Social & Leisure
+malaysian_restaurant,15,2095871,99.88133595696831,Restaurant
+customs_broker,15,2095886,99.88205080060104,Civic and utility
+badminton_court,15,2095901,99.88276564423376,Social & Leisure
+bagel_restaurant,14,2095915,99.88343283162428,Restaurant
+do_it_yourself_store,14,2095929,99.88410001901484,Essential needs
+poultry_farming,14,2095943,99.88476720640536,Other
+aircraft_repair,14,2095957,99.88543439379592,Civic and utility
+fur_clothing,14,2095971,99.88610158118648,Essential needs
+boat_parts_and_supply_store,14,2095985,99.88676877,Other
+b2b_truck_equipment_parts_and_accessories,14,2095999,99.88743595596756,Other
+school_sports_team,14,2096013,99.88810314335808,Education
+haunted_house,14,2096027,99.88877033074864,Social & Leisure
+bathtub_and_sink_repairs,14,2096041,99.88943751813916,Other
+duty_free_shop,14,2096055,99.89010471,Essential needs
+audio_visual_production_and_design,13,2096068,99.89072423667804,Social & Leisure
+basketball_stadium,13,2096081,99.8913437678264,Social & Leisure
+television_station,13,2096094,99.89196329897476,Social & Leisure
+coffee_and_tea_supplies,13,2096107,99.89258283012312,Other
+digitizing_services,13,2096120,99.89320236127148,Civic and utility
+dietitian,13,2096133,99.89382189241984,Health services
+georgian_restaurant,13,2096146,99.89444142,Restaurant
+eyelash_service,13,2096159,99.89506095471656,Social & Leisure
+fertilizer_store,13,2096172,99.89568048586491,Other
+urgent_care_clinic,13,2096185,99.89630001701327,Health services
+canadian_restaurant,13,2096198,99.89691954816163,Restaurant
+onsen,13,2096211,99.89753908,Social & Leisure
+hockey_field,13,2096224,99.89815861045837,Social & Leisure
+exhibition_and_trade_center,13,2096237,99.89877814160673,Social & Leisure
+scientific_laboratories,13,2096250,99.89939767275509,Education
+student_union,12,2096262,99.89996954766124,Social & Leisure
+podiatry,12,2096274,99.90054142256744,Health services
+quay,12,2096286,99.9011133,Civic and utility
+aircraft_dealer,12,2096298,99.90168517237976,Other
+engineering_schools,12,2096310,99.90225704728596,Education
+tattoo_removal,12,2096322,99.90282892219211,Health services
+carpet_installation,12,2096334,99.90340079709831,Other
+typing_services,12,2096346,99.90397267200449,Civic and utility
+seafood_wholesaler,12,2096358,99.90454454691066,Essential needs
+austrian_restaurant,12,2096370,99.90511642181684,Restaurant
+baseball_stadium,12,2096382,99.905688296723,Social & Leisure
+musical_instrument_services,12,2096394,99.9062601716292,Social & Leisure
+airport_lounge,12,2096406,99.90683204653536,Social & Leisure
+chinese_martial_arts_club,12,2096418,99.90740392144154,Social & Leisure
+horse_racing_track,12,2096430,99.90797579634771,Social & Leisure
+proctologist,12,2096442,99.90854767,Health services
+fort,11,2096453,99.90907188991788,Civic and utility
+guitar_store,11,2096464,99.90959611,Social & Leisure
+school_sports_league,11,2096475,99.91012032724588,Education
+dui_law,11,2096486,99.91064454590988,Civic and utility
+adoption_services,11,2096497,99.91116876457389,Civic and utility
+roller_skating_rink,11,2096508,99.91169298323788,Social & Leisure
+rafting_kayaking_area,11,2096519,99.91221720190188,Social & Leisure
+formal_wear_store,11,2096530,99.91274142056588,Essential needs
+corporate_entertainment_services,11,2096541,99.91326563922983,Social & Leisure
+hematology,11,2096552,99.91378985789385,Health services
+boat_charter,11,2096563,99.91431407655784,Social & Leisure
+asian_grocery_store,11,2096574,99.91483829522184,Essential needs
+tax_office,11,2096585,99.91536251388584,Civic and utility
+matchmaker,11,2096596,99.91588673254984,Social & Leisure
+mongolian_restaurant,11,2096607,99.91641095121383,Restaurant
+jet_skis_rental,11,2096618,99.91693516987782,Social & Leisure
+ceiling_and_roofing_repair_and_service,11,2096629,99.9174593885418,Other
+meat_shop,11,2096640,99.9179836072058,Essential needs
+climbing_service,11,2096651,99.9185078258698,Social & Leisure
+design_museum,10,2096661,99.91898438829162,Social & Leisure
+wind_energy,10,2096671,99.91946095071344,Civic and utility
+sports_psychologist,10,2096681,99.91993751313524,Health services
+fastener_supplier,10,2096691,99.92041407555706,Other
+home_automation,10,2096701,99.92089063797889,Civic and utility
+knife_sharpening,10,2096711,99.9213672,Other
+sailing_area,10,2096721,99.92184376,Social & Leisure
+gemstone_and_mineral,10,2096731,99.92232032524431,Other
+media_restoration_service,10,2096741,99.92279688766614,Other
+armenian_restaurant,10,2096751,99.92327345008796,Restaurant
+registry_office,10,2096761,99.92375001250976,Civic and utility
+oil_change_station,10,2096771,99.92422657493158,Other
+pool_and_billiards,10,2096781,99.9247031373534,Social & Leisure
+avionics_shop,10,2096791,99.9251797,Other
+military_surplus_store,10,2096801,99.925656262197,Other
+architecture,10,2096811,99.92613282461885,Social & Leisure
+golf_cart_dealer,10,2096821,99.92660938704064,Social & Leisure
+children's_museum,10,2096831,99.92708594946244,Education
+livestock_dealers,10,2096841,99.92756251188428,Other
+ferry_service,10,2096851,99.92803907430608,Civic and utility
+mills,10,2096861,99.92851564,Other
+dive_shop,10,2096871,99.92899219914972,Social & Leisure
+car_stereo_installation,9,2096880,99.92942110532935,Social & Leisure
+cable_car_service,9,2096889,99.92985001150898,Social & Leisure
+cooking_classes,9,2096898,99.93027891768864,Social & Leisure
+self_defense_classes,9,2096907,99.93070782386825,Social & Leisure
+holiday_park,9,2096916,99.93113673004788,Social & Leisure
+siding,9,2096925,99.93156563622752,Other
+civil_rights_lawyers,9,2096934,99.93199454240714,Civic and utility
+strip_club,9,2096943,99.9324234485868,Social & Leisure
+lighting_fixtures_and_equipment,9,2096952,99.9328523547664,Other
+boat_builder,9,2096961,99.93328126094605,Other
+water_purification_services,9,2096970,99.93371016712568,Civic and utility
+sports_museum,9,2096979,99.93413907,Social & Leisure
+coin_dealers,9,2096988,99.93456797948494,Other
+religious_destination,9,2096997,99.93499688566456,Social & Leisure
+lighting_fixture_manufacturers,9,2097006,99.93542579,Other
+b2b_autos_and_vehicles,9,2097015,99.93585469802385,Other
+agricultural_seed_store,9,2097024,99.93628360420348,Other
+hydroponic_gardening,9,2097033,99.93671251,Social & Leisure
+acoustical_consultant,9,2097042,99.93714141656274,Other
+kids_hair_salon,9,2097051,99.93757032274236,Social & Leisure
+general_litigation,8,2097059,99.93795157267982,Civic and utility
+kiteboarding,8,2097067,99.93833282261728,Social & Leisure
+community_gardens,8,2097075,99.93871407255472,Social & Leisure
+pet_cemetery_and_crematorium_services,8,2097083,99.93909532249218,Other
+whiskey_bar,8,2097091,99.93947657242964,Social & Leisure
+public_restrooms,8,2097099,99.93985782236707,Essential needs
+guatemalan_restaurant,8,2097107,99.94023907230452,Restaurant
+snorkeling,8,2097115,99.94062032224198,Social & Leisure
+sheet_metal,8,2097123,99.94100157217945,Other
+rock_climbing_gym,8,2097131,99.94138282211688,Social & Leisure
+civil_examinations_academy,8,2097139,99.94176407205433,Education
+shared_office_space,8,2097147,99.9421453219918,Civic and utility
+erotic_massage,8,2097155,99.94252657192924,Social & Leisure
+food_tours,8,2097163,99.94290782186668,Social & Leisure
+hang_gliding_center,8,2097171,99.94328907180412,Social & Leisure
+eatertainment,8,2097179,99.94367032174158,Social & Leisure
+pier,8,2097187,99.94405157167904,Social & Leisure
+scandinavian_restaurant,8,2097195,99.94443282161647,Restaurant
+packaging_contractors_and_service,8,2097203,99.94481407155396,Civic and utility
+car_buyer,8,2097211,99.94519532,Other
+natural_hot_springs,8,2097219,99.94557657142884,Social & Leisure
+coffee_roastery,8,2097227,99.94595782136628,Social & Leisure
+aggregate_supplier,8,2097235,99.94633907130375,Other
+scale_supplier,8,2097243,99.94672032,Other
+b2b_hardware,8,2097251,99.94710157117864,Civic and utility
+bearing_supplier,8,2097259,99.94748282,Other
+jehovahs_witness_kingdom_hall,7,2097266,99.94781641481136,Social & Leisure
+emergency_roadside_service,7,2097273,99.94815000850664,Civic and utility
+department_of_social_service,7,2097280,99.9484836,Civic and utility
+lawn_mower_repair_service,7,2097287,99.94881719589718,Civic and utility
+medical_sciences_schools,7,2097294,99.94915078959244,Education
+neuropathologist,7,2097301,99.94948438328773,Health services
+agricultural_production,7,2097308,99.94981797698298,Other
+irrigation_companies,7,2097315,99.95015157067826,Civic and utility
+asian_art_museum,7,2097322,99.95048516437352,Social & Leisure
+football_club,7,2097329,99.9508187580688,Social & Leisure
+civilization_museum,7,2097336,99.95115235176408,Social & Leisure
+brewing_supply_store,7,2097343,99.95148594545934,Social & Leisure
+abrasives_supplier,7,2097350,99.9518195391546,Other
+film_festivals_and_organizations,7,2097357,99.95215313284989,Social & Leisure
+cosmetic_products_manufacturer,7,2097364,99.95248672654516,Other
+island,7,2097371,99.95282032024042,Other
+ukrainian_restaurant,7,2097378,99.95315391,Restaurant
+dive_bar,7,2097385,99.95348750763095,Social & Leisure
+indoor_playcenter,7,2097392,99.95382110132624,Social & Leisure
+addiction_rehabilitation_center,7,2097399,99.95415469502149,Health services
+turnery,7,2097406,99.95448828871676,Other
+mountain_bike_parks,7,2097413,99.95482188241203,Social & Leisure
+flyboarding_center,7,2097420,99.95515547610732,Social & Leisure
+skating_rink,7,2097427,99.95548906980255,Social & Leisure
+check_cashing_payday_loans,7,2097434,99.95582266349784,Other
+snow_removal_service,7,2097441,99.95615625719311,Civic and utility
+paralegal_services,7,2097448,99.9564898508884,Civic and utility
+venezuelan_restaurant,7,2097455,99.95682344458363,Restaurant
+plastic_injection_molding_workshop,7,2097462,99.95715703827892,Other
+polynesian_restaurant,7,2097469,99.95749063,Restaurant
+kickboxing_club,7,2097476,99.95782422566948,Social & Leisure
+textile_museum,7,2097483,99.95815781936471,Social & Leisure
+chicken_wings_restaurant,7,2097490,99.95849141,Restaurant
+boat_storage_facility,7,2097497,99.95882500675528,Social & Leisure
+decorative_arts_museum,7,2097504,99.95915860045054,Social & Leisure
+chamber_of_handicraft,7,2097511,99.9594921941458,Civic and utility
+home_window_tinting,7,2097518,99.95982578784108,Other
+billing_services,7,2097525,99.96015938153636,Civic and utility
+honduran_restaurant,7,2097532,99.96049297523162,Restaurant
+furniture_reupholstery,7,2097539,99.96082656892688,Other
+water_softening_equipment_supplier,7,2097546,99.96116016262216,Other
+medical_law,7,2097553,99.96149375631744,Health services
+boxing_gym,6,2097559,99.96177969377052,Social & Leisure
+vegan_restaurant,6,2097565,99.9620656312236,Restaurant
+psychoanalyst,6,2097571,99.96235157,Health services
+environmental_renewable_natural_resource,6,2097577,99.96263750612978,Civic and utility
+pie_shop,6,2097583,99.96292344358288,Other
+lighthouse,6,2097589,99.96320938103597,Civic and utility
+montessori_school,6,2097595,99.96349531848904,Education
+ecuadorian_restaurant,6,2097601,99.96378125594214,Restaurant
+abortion_clinic,6,2097607,99.96406719339522,Health services
+shaved_ice_shop,6,2097613,99.96435313084832,Social & Leisure
+indo_chinese_restaurant,6,2097619,99.96463907,Restaurant
+singaporean_restaurant,6,2097625,99.96492501,Restaurant
+furniture_rental_service,6,2097631,99.96521094320758,Other
+direct_mail_advertising,6,2097637,99.96549688066068,Other
+childbirth_education,6,2097643,99.96578281811377,Health services
+vehicle_wrap,6,2097649,99.96606875556684,Other
+threads_and_yarns_wholesaler,6,2097655,99.96635469301994,Other
+costume_museum,6,2097661,99.96664063047302,Social & Leisure
+newspaper_advertising,6,2097667,99.96692656792612,Other
+indoor_landscaping,6,2097673,99.96721251,Other
+drone_store,6,2097679,99.96749844,Social & Leisure
+aluminum_supplier,6,2097685,99.96778438028538,Civic and utility
+pet_hospice,6,2097691,99.96807031773848,Health services
+piadina_restaurant,6,2097697,99.96835625519157,Restaurant
+feng_shui,6,2097703,99.96864219264464,Social & Leisure
+music_festivals_and_organizations,6,2097709,99.96892813009774,Social & Leisure
+rv_storage_facility,6,2097715,99.9692140675508,Civic and utility
+watch_repair_service,6,2097721,99.96950000500392,Other
+hybrid_car_repair,6,2097727,99.96978594,Civic and utility
+b2b_agriculture_and_food,6,2097733,99.97007187991008,Other
+paint_your_own_pottery,5,2097738,99.970310161121,Social & Leisure
+kurdish_restaurant,5,2097743,99.97054844,Restaurant
+instrumentation_engineers,5,2097748,99.97078672,Other
+otologist,5,2097753,99.97102500475371,Health services
+tiki_bar,5,2097758,99.97126328596462,Social & Leisure
+aviation_museum,5,2097763,99.97150156717552,Social & Leisure
+food_banks,5,2097768,99.97173984838643,Essential needs
+supernatural_reading,5,2097773,99.97197812959732,Social & Leisure
+laser_cutting_service_provider,5,2097778,99.97221641080824,Other
+sugaring,5,2097783,99.97245469201916,Social & Leisure
+aircraft_manufacturer,5,2097788,99.97269297323004,Other
+manufacturers_agents_and_representatives,5,2097793,99.97293125444097,Other
+professional_sports_league,5,2097798,99.97316953565188,Social & Leisure
+used_bookstore,5,2097803,99.97340781686276,Social & Leisure
+industrial_spares_and_products_wholesaler,5,2097808,99.97364609807369,Other
+weather_station,5,2097813,99.97388438,Civic and utility
+tobacco_company,5,2097818,99.97412266,Other
+private_jet_charters,5,2097823,99.9743609417064,Social & Leisure
+photographer,5,2097828,99.97459922291732,Social & Leisure
+haitian_restaurant,5,2097833,99.97483750412822,Restaurant
+town_car_service,5,2097838,99.97507578533911,Civic and utility
+childrens_hospital,5,2097843,99.97531406655004,Health services
+spiritual_shop,5,2097848,99.97555234776094,Social & Leisure
+homeowner_association,5,2097853,99.97579062897184,Civic and utility
+sailing_club,5,2097858,99.97602891018276,Social & Leisure
+auto_loan_provider,5,2097863,99.97626719139366,Other
+pasta_shop,5,2097868,99.97650547260456,Essential needs
+hazardous_waste_disposal,4,2097872,99.9766961,Civic and utility
+musical_band_orchestras_and_symphonies,4,2097876,99.97688672254202,Social & Leisure
+metro_station,4,2097880,99.97707734751074,Civic and utility
+religious_items,4,2097884,99.97726797247948,Other
+aesthetician,4,2097888,99.9774586,Health services
+immigration_assistance_services,4,2097892,99.97764922241691,Civic and utility
+trucks_and_industrial_vehicles,4,2097896,99.97783984738564,Other
+recreational_vehicle_parts_and_accessories,4,2097900,99.97803047235438,Other
+refinishing_services,4,2097904,99.9782211,Other
+batting_cage,4,2097908,99.97841172229182,Social & Leisure
+architectural_tours,4,2097912,99.97860234726056,Social & Leisure
+seafood_market,4,2097916,99.97879297222929,Essential needs
+leather_products_manufacturer,4,2097920,99.9789836,Other
+farrier_services,4,2097924,99.97917422216672,Other
+jamaican_restaurant,4,2097928,99.97936484713546,Restaurant
+truck_gas_station,4,2097932,99.97955547210418,Other
+spring_supplier,4,2097936,99.9797461,Other
+car_auction,4,2097940,99.97993672204164,Social & Leisure
+transcription_services,4,2097944,99.98012734701037,Civic and utility
+plaza,4,2097948,99.98031797197908,Social & Leisure
+balloon_ports,4,2097952,99.9805086,Social & Leisure
+pediatric_cardiology,4,2097956,99.98069922191654,Health services
+flower_markets,4,2097960,99.98088984688526,Other
+bartending_school,4,2097964,99.981080471854,Education
+motorcycle_gear,4,2097968,99.98127109682272,Other
+outdoor_movies,4,2097972,99.98146172179143,Social & Leisure
+bird_shop,4,2097976,99.98165234676016,Social & Leisure
+skylight_installation,4,2097980,99.98184297172888,Other
+dentistry_schools,4,2097984,99.98203359669762,Education
+scout_hall,4,2097988,99.98222422166634,Social & Leisure
+jewelry_repair_service,4,2097992,99.98241484663508,Other
+bus_ticket_agency,4,2097996,99.9826054716038,Civic and utility
+tabletop_games,4,2098000,99.98279609657251,Social & Leisure
+law_schools,4,2098004,99.98298672154124,Education
+b2b_tires,3,2098007,99.98312969026776,Other
+floral_designer,3,2098010,99.98327265899432,Other
+jewelry_manufacturer,3,2098013,99.98341562772087,Other
+home_and_rental_insurance,3,2098016,99.98355859644742,Other
+roadside_assistance,3,2098019,99.98370156517396,Civic and utility
+military_museum,3,2098022,99.98384453,Social & Leisure
+propane_supplier,3,2098025,99.98398750262704,Other
+volleyball_club,3,2098028,99.98413047,Social & Leisure
+iron_and_steel_store,3,2098031,99.98427344008014,Other
+pool_hall,3,2098034,99.98441640880668,Social & Leisure
+studio_taping,3,2098037,99.98455937753322,Social & Leisure
+dominican_restaurant,3,2098040,99.98470234625977,Restaurant
+greenhouses,3,2098043,99.98484531498632,Other
+certification_agency,3,2098046,99.98498828371288,Education
+hockey_arena,3,2098049,99.98513125,Social & Leisure
+aquarium_services,3,2098052,99.98527422116594,Social & Leisure
+alcohol_and_drug_treatment_center,3,2098055,99.98541718989247,Health services
+airsoft_fields,3,2098058,99.98556015861904,Social & Leisure
+stock_and_bond_brokers,3,2098061,99.9857031273456,Civic and utility
+back_shop,3,2098064,99.98584609607212,Social & Leisure
+road_structures_and_services,3,2098067,99.98598906479866,Civic and utility
+exhaust_and_muffler_repair,3,2098070,99.9861320335252,Other
+donation_center,3,2098073,99.98627500225176,Civic and utility
+esthetician,3,2098076,99.98641797097832,Health services
+sleep_specialist,3,2098079,99.98656093970484,Health services
+footwear_wholesaler,3,2098082,99.98670390843138,Essential needs
+flatbread_restaurant,3,2098085,99.98684687715792,Restaurant
+holiday_decor,3,2098088,99.98698984588448,Social & Leisure
+wildlife_control,3,2098091,99.98713281461104,Civic and utility
+food_court,3,2098094,99.98727578333757,Social & Leisure
+surfing_school,3,2098097,99.98741875,Social & Leisure
+geriatric_psychiatry,3,2098100,99.98756172079064,Health services
+go_kart_track,3,2098103,99.98770469,Social & Leisure
+b2b_dairies,3,2098106,99.98784765824377,Other
+manufacturing_and_industrial_consultant,3,2098109,99.98799062697027,Other
+ironworkers,3,2098112,99.98813359569682,Other
+olive_oil,3,2098115,99.98827656442336,Essential needs
+air_duct_cleaning_service,3,2098118,99.98841953314992,Civic and utility
+antenna_service,3,2098121,99.98856250187646,Civic and utility
+entertainment_law,3,2098124,99.988705470603,Other
+diamond_dealer,3,2098127,99.98884843932956,Other
+circus_school,3,2098130,99.98899141,Social & Leisure
+atelier,3,2098133,99.98913437678264,Social & Leisure
+irrigation,3,2098136,99.98927734550918,Civic and utility
+south_african_restaurant,3,2098139,99.98942031423572,Restaurant
+ice_supplier,3,2098142,99.98956328296228,Other
+walk_in_clinic,3,2098145,99.98970625168882,Health services
+makerspace,3,2098148,99.98984922041537,Education
+scooter_rental,3,2098151,99.98999219,Social & Leisure
+pediatric_endocrinology,3,2098154,99.99013515786844,Health services
+ayurveda,2,2098156,99.9902304703528,Health services
+spray_tanning,2,2098158,99.99032578283716,Social & Leisure
+blueprinters,2,2098160,99.99042109532154,Civic and utility
+diy_foods_restaurant,2,2098162,99.99051640780591,Restaurant
+muay_thai_club,2,2098164,99.99061172029027,Social & Leisure
+artificial_turf,2,2098166,99.99070703277462,Social & Leisure
+photography_museum,2,2098168,99.99080234525898,Social & Leisure
+party_bus_rental,2,2098170,99.99089765774336,Social & Leisure
+boxing_club,2,2098172,99.99099297022772,Social & Leisure
+state_park,2,2098174,99.99108828271208,Social & Leisure
+disc_golf_course,2,2098176,99.99118359519645,Social & Leisure
+farm_equipment_repair_service,2,2098178,99.9912789076808,Other
+tanning_bed,2,2098180,99.99137422016516,Social & Leisure
+lawn_bowling_club,2,2098182,99.99146953264952,Social & Leisure
+product_design,2,2098184,99.99156485,Education
+ruin,2,2098186,99.99166015761826,Social & Leisure
+agricultural_engineering_service,2,2098188,99.99175547010262,Civic and utility
+nicaraguan_restaurant,2,2098190,99.99185078258698,Restaurant
+pumpkin_patch,2,2098192,99.99194609507136,Social & Leisure
+flour_mill,2,2098194,99.99204141,Other
+b2b_farms,2,2098196,99.99213672004008,Other
+hungarian_restaurant,2,2098198,99.99223203252444,Restaurant
+science_schools,2,2098200,99.9923273450088,Education
+fitness_equipment_wholesaler,2,2098202,99.99242265749317,Social & Leisure
+bulgarian_restaurant,2,2098204,99.99251796997753,Restaurant
+community_health_center,2,2098206,99.99261328246187,Health services
+emergency_medicine,2,2098208,99.99270859494624,Health services
+gerontologist,2,2098210,99.99280391,Health services
+rodeo,2,2098212,99.99289921991496,Social & Leisure
+editorial_services,2,2098214,99.99299453239934,Other
+officiating_services,2,2098216,99.99308984,Civic and utility
+burmese_restaurant,2,2098218,99.99318515736806,Restaurant
+pen_store,2,2098220,99.99328046985242,Essential needs
+basque_restaurant,2,2098222,99.99337578233678,Restaurant
+molecular_gastronomy_restaurant,2,2098224,99.99347109482116,Restaurant
+kiteboarding_instruction,2,2098226,99.99356640730552,Social & Leisure
+beach_resort,2,2098228,99.99366171978988,Social & Leisure
+wine_tasting_room,2,2098230,99.99375703227425,Social & Leisure
+exterior_design,2,2098232,99.9938523447586,Other
+fidelity_and_surety_bonds,2,2098234,99.99394765724296,Civic and utility
+speech_training,2,2098236,99.99404296972732,Education
+private_equity_firm,2,2098238,99.99413828221168,Other
+pharmacy_schools,2,2098240,99.99423359469604,Education
+social_security_law,2,2098242,99.99432890718042,Civic and utility
+immigration_and_naturalization,2,2098244,99.99442421966478,Civic and utility
+custom_cakes_shop,2,2098246,99.99451953214914,Other
+racing_experience,2,2098248,99.99461484,Social & Leisure
+holistic_animal_care,2,2098250,99.99471015711786,Health services
+duplication_services,2,2098252,99.99480546960224,Civic and utility
+mexican_grocery_store,2,2098254,99.9949007820866,Essential needs
+denim_wear_store,2,2098256,99.99499609457096,Essential needs
+cheesesteak_restaurant,2,2098258,99.99509140705533,Restaurant
+australian_restaurant,2,2098260,99.99518671953967,Restaurant
+pretzels,2,2098262,99.99528203202404,Essential needs
+wok_restaurant,2,2098264,99.9953773445084,Restaurant
+oil_and_gas_exploration_and_development,2,2098266,99.99547265699276,Civic and utility
+motorsport_vehicle_repair,2,2098268,99.99556796947712,Social & Leisure
+stress_management_services,2,2098270,99.99566328196148,Health services
+hydrotherapy,2,2098272,99.99575859444586,Health services
+trampoline_park,1,2098273,99.99580625068803,Social & Leisure
+slovakian_restaurant,1,2098274,99.99585390693022,Restaurant
+firearm_training,1,2098275,99.99590156,Social & Leisure
+rest_stop,1,2098276,99.99594921941458,Essential needs
+corporate_gift_supplier,1,2098277,99.99599687565676,Other
+school_district_offices,1,2098278,99.99604453189896,Education
+beach_bar,1,2098279,99.99609218814112,Social & Leisure
+veterinary_schools,1,2098280,99.99613984438332,Education
+media_critic,1,2098281,99.9961875,Social & Leisure
+live_and_raw_food_restaurant,1,2098282,99.99623515686768,Restaurant
+trinidadian_restaurant,1,2098283,99.99628281310984,Restaurant
+bar_crawl,1,2098284,99.99633046935205,Social & Leisure
+water_delivery,1,2098285,99.99637813,Essential needs
+health_retreats,1,2098286,99.99642578,Health services
+cheese_tasting_classes,1,2098287,99.99647343807858,Social & Leisure
+salvadoran_restaurant,1,2098288,99.99652109432076,Restaurant
+japanese_grocery_store,1,2098289,99.99656875056294,Essential needs
+meat_restaurant,1,2098290,99.99661640680512,Restaurant
+attraction_farm,1,2098291,99.99666406,Social & Leisure
+shoe_shining_service,1,2098292,99.99671172,Social & Leisure
+wildlife_hunting_range,1,2098293,99.99675937553168,Social & Leisure
+business_banking_service,1,2098294,99.99680703177386,Other
+gymnastics_club,1,2098295,99.99685468801604,Social & Leisure
+houseboat,1,2098296,99.99690234,Social & Leisure
+memorial_park,1,2098297,99.9969500005004,Social & Leisure
+diy_auto_shop,1,2098298,99.99699765674256,Social & Leisure
+casting_molding_and_machining,1,2098299,99.99704531298477,Civic and utility
+boudoir_photography,1,2098300,99.99709296922693,Social & Leisure
+canteen,1,2098301,99.99714062546911,Essential needs
+holiday_market,1,2098302,99.99718828,Social & Leisure
+public_adjuster,1,2098303,99.99723593795348,Civic and utility
+orchard,1,2098304,99.99728359419566,Social & Leisure
+low_income_housing,1,2098305,99.99733125043784,Essential needs
+aircraft_parts_and_supplies,1,2098306,99.99737890668004,Other
+smokehouse,1,2098307,99.9974265629222,Social & Leisure
+sperm_clinic,1,2098308,99.9974742191644,Health services
+vascular_medicine,1,2098309,99.99752187540658,Health services
+traditional_chinese_medicine,1,2098310,99.99756953164876,Health services
+serbo_croation_restaurant,1,2098311,99.99761718789092,Restaurant
+retaining_wall_supplier,1,2098312,99.99766484413313,Civic and utility
+blow_dry_blow_out_service,1,2098313,99.99771250037529,Social & Leisure
+weather_forecast_services,1,2098314,99.99776015661747,Civic and utility
+potato_restaurant,1,2098315,99.99780781285963,Restaurant
+acne_treatment,1,2098316,99.99785546910184,Health services
+trail,1,2098317,99.99790312534402,Social & Leisure
+hockey_equipment,1,2098318,99.99795078,Social & Leisure
+temple,1,2098319,99.9979984378284,Social & Leisure
+farm_insurance,1,2098320,99.99804609407056,Essential needs
+props,1,2098321,99.99809375031276,Social & Leisure
+pick_your_own_farm,1,2098322,99.99814140655494,Social & Leisure
+senegalese_restaurant,1,2098323,99.99818906279712,Restaurant
+estate_liquidation,1,2098324,99.99823671903928,Other
+dinner_theater,1,2098325,99.99828437528149,Social & Leisure
+cardiovascular_and_thoracic_surgeon,1,2098326,99.99833203152365,Health services
+country_club,1,2098327,99.99837968776583,Social & Leisure
+walking_tours,1,2098328,99.998427344008,Social & Leisure
+mountain_huts,1,2098329,99.998475,Social & Leisure
+wine_tasting_classes,1,2098330,99.99852265649236,Social & Leisure
+canyon,1,2098331,99.99857031273456,Social & Leisure
+pet_photography,1,2098332,99.99861796897676,Social & Leisure
+paddleboard_rental,1,2098333,99.99866562521892,Social & Leisure
+windshield_installation_and_repair,1,2098334,99.99871328146112,Other
+fish_restaurant,1,2098335,99.99876093770328,Restaurant
+brazilian_jiu_jitsu_club,1,2098336,99.99880859394548,Social & Leisure
+restaurant_management,1,2098337,99.99885625018766,Restaurant
+doula,1,2098338,99.99890390642985,Health services
+gay_and_lesbian_services_organization,1,2098339,99.99895156,Social & Leisure
+taxi_rank,1,2098340,99.99899922,Civic and utility
+bookmakers,1,2098341,99.99904687515637,Social & Leisure
+eyebrow_service,1,2098342,99.99909453139855,Social & Leisure
+ems_training,1,2098343,99.99914218764071,Education
+table_tennis_club,1,2098344,99.99918984388292,Social & Leisure
+friterie,1,2098345,99.99923750012508,Social & Leisure
+sake_bar,1,2098346,99.99928515636728,Social & Leisure
+video_game_critic,1,2098347,99.99933281260948,Social & Leisure
+b2b_storage_and_warehouses,1,2098348,99.99938046885164,Civic and utility
+uzbek_restaurant,1,2098349,99.99942812509384,Restaurant
+catalan_restaurant,1,2098350,99.99947578,Restaurant
+chilean_restaurant,1,2098351,99.9995234375782,Restaurant
+indian_grocery_store,1,2098352,99.99957109382038,Essential needs
+scottish_restaurant,1,2098353,99.99961875006257,Restaurant
+foundation_repair,1,2098354,99.99966640630473,Civic and utility
+cancer_treatment_center,1,2098355,99.99971406,Health services
+mailbox_center,1,2098356,99.99976171878907,Civic and utility
+apiaries_and_beekeepers,1,2098357,99.99980937503128,Other
+environmental_abatement_services,1,2098358,99.99985703127344,Civic and utility
+pet_transportation,1,2098359,99.99990468751564,Other
+wine_tours,1,2098360,99.9999523437578,Social & Leisure
+forestry_consultants,1,2098361,100.0,Civic and utility

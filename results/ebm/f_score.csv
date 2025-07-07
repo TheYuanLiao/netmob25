@@ -1,0 +1,14 @@
+Name,Color,Score
+Access (home),steelblue,0.4858768109751084
+Distance to Home Neighborhood & Access (home),black,0.2171182005412565
+Distance to Home Neighborhood,steelblue,0.188643480320533
+Public Transport Subscription,steelblue,0.16366679555354785
+Car number,steelblue,0.10006199736773341
+Household type,coral,0.06733828121274824
+Age,coral,0.06334002811452304
+Distance to Home Neighborhood & Car number,black,0.0560841001435347
+Education,coral,0.04918708889905111
+Bike number,steelblue,0.03656926501683571
+Two-wheeler number,steelblue,0.012040075318022784
+E-scooter number,steelblue,0.00323951966534054
+Gender,coral,0.0009335218522389758
