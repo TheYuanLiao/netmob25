@@ -210,3 +210,15 @@ class EBMResultsOrganizer:
 
         df_interactions = pd.DataFrame(interaction_data)
         df_interactions.to_csv(path2save + 'interactions.csv', index=False)
+        
+
+def weighted_median(values, weights):
+    """
+    Compute the weighted median of values using weights.
+    """
+    sorted_idx = np.argsort(values)
+    sorted_values = np.array(values)[sorted_idx]
+    sorted_weights = np.array(weights)[sorted_idx]
+    cum_weights = np.cumsum(sorted_weights)
+    cutoff = 0.5 * np.sum(sorted_weights)
+    return sorted_values[np.searchsorted(cum_weights, cutoff)]
