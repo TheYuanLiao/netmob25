@@ -16,14 +16,43 @@ read.img <- function(path, lb, size = 60, pdf = FALSE) {
   return(final_img)
 }
 
+# Figure 2 (updated) ----
+image1 <- read.img(path="figures/total_travel_time_spa.png", lb='a')
+image2 <- read.img(path="figures/hill_q1_spa.png", lb='')
+image3 <- read.img(path="figures/total_travel_time.png", lb='b')
+image4 <- read.img(path="figures/hill_q1.png", lb='c')
+
+## Combine images 1-3 & 4-5
+# Get height of image 3
+image1_w <- image_info(image1)$width
+
+# Create blank space between them and stack three
+blank_space_h <- image_blank(image1_w, 2, color = "white")
+
+combined_image1 <- image_append(c(image1, blank_space_h, image2), stack = T)
+combined_image1_h <- image_info(combined_image1)$height
+
+blank_space_h2 <- image_blank(2, combined_image1_h, color = "white")
+
+image3_w <- image_info(image3)$width
+
+# Create blank space between them and stack three
+blank_space_w <- image_blank(image3_w, 2, color = "white")
+
+combined_image2 <- image_append(c(image3, blank_space_w, image4), stack = T)
+
+# Now stack all three images vertically
+final_figure <- image_append(c(combined_image1, blank_space_h2, combined_image2), stack = F)
+image_write(final_figure, "figures/figure2.png")
+
 # Figure 2----
 image1 <- read.img(path="figures/trip_chaining_presence_spa.png", lb='a')
 image2 <- read.img(path="figures/xs_total_hws_spa.png", lb='')
-image3 <- read.img(path="figures/entropy_mm_spa.png", lb='')
+image3 <- read.img(path="figures/hill_q1_spa.png", lb='')
 image31 <- read.img(path="figures/activity_time_third_spa.png", lb='')
 image4 <- read.img(path="figures/trip_chaining_presence.png", lb='b')
 image5 <- read.img(path="figures/xs_total_hws.png", lb='c')
-image6 <- read.img(path="figures/entropy_mm.png", lb='d')
+image6 <- read.img(path="figures/hill_q1.png", lb='d')
 image61 <- read.img(path="figures/activity_time_third.png", lb='e')
 
 ## Combine images 1-3 & 4-5

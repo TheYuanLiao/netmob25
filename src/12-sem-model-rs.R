@@ -14,13 +14,13 @@ d <- read.csv("dbs/data_p/commuter_model_features_r.csv") %>%
 
 # 2) Variable roles
 socio_cat  <- c("Gender", "Education", "Household_type")
+socio_con <- "poverty_rate"
 ls_var <- "active_mode"
 mode_var   <- "mode"
 pt_sub_var <- "pt_sub"
 spa_var    <- "ak_log"
-beh_cnt    <- c("total_travel_time", "xs_total_hws")
-# beh_bin    <- "trip_chaining_presence"
-leisure_y  <- c("entropy_logit", "activity_time_third")
+beh_cnt    <- "total_travel_time"    # xs_total_hws is dropped
+leisure_y  <- "hill_q1"   # "activity_time_third" is dropped
 weight_var <- "weight_ind"
 
 # 3) Helpers
@@ -51,8 +51,8 @@ is_binary <- function(x) {
 
 # 4) Core transforms
 # d[[beh_bin]] <- ifelse(as.numeric(d[[beh_bin]]) > 0, 1, 0)
-eps <- 1e-6
-d$entropy_logit <- qlogis(pmin(pmax(d$entropy_mm, eps), 1 - eps))
+#eps <- 1e-6
+#d$entropy_logit <- qlogis(pmin(pmax(d$entropy_mm, eps), 1 - eps))
 
 # Sanitize factor levels
 to_sanitize <- c(socio_cat, mode_var, pt_sub_var)
@@ -87,7 +87,7 @@ exog_names <- names(exog_block)
 
 # 6) Final dataset
 # d[[beh_bin]] <- factor(d[[beh_bin]], levels = c(0, 1), labels = c("no", "yes"), ordered = TRUE)
-needed <- c(spa_var, beh_cnt, leisure_y, weight_var, exog_names)
+needed <- c(spa_var, socio_con, beh_cnt, leisure_y, weight_var, exog_names)
 
 d_prepped <- cbind(
   d[, c(spa_var, beh_cnt, leisure_y, weight_var)],
@@ -96,8 +96,7 @@ d_prepped <- cbind(
 d_prepped <- d_prepped[complete.cases(d_prepped[, needed]), ]
 
 # 7) Scale continuous vars
-cont_vars <- c("ak_log", "total_travel_time", "xs_total_hws",
-               "activity_time_third", "entropy_logit")
+cont_vars <- c("ak_log", "total_travel_time", "hill_q1", "poverty_rate")
 cont_vars <- cont_vars[cont_vars %in% names(d_prepped)]
 for (v in cont_vars) {
   d_prepped[[v]] <- as.numeric(scale(d_prepped[[v]]))
@@ -126,8 +125,7 @@ rhs_exog <- if (length(exog_names_final) > 0) paste(exog_names_final, collapse =
 
 # Variables lavaan will see (observed)
 vars_in_model <- unique(c(
-  "ak_log", "total_travel_time", "xs_total_hws",
-  "entropy_logit", "activity_time_third",
+  "ak_log", "total_travel_time", "hill_q1",
   exog_names_final
 ))
 X <- d_prepped[, vars_in_model, drop = FALSE]
@@ -177,40 +175,6 @@ d_prepped_pd <- cbind(X, weight_ind = d_prepped$weight_ind)
 exog_final2 <- intersect(exog_names_final, names(d_prepped_pd))
 rhs_exog2 <- if (length(exog_final2) > 0) paste(exog_final2, collapse = " + ") else "1"
 
-lines2 <- c(
-  paste0("ak_log ~ ", rhs_exog2),
-  "total_travel_time ~ a_ttime*ak_log",
-  "xs_total_hws ~ a_xs*ak_log",
-  "entropy_logit ~ c1*ak_log + b_ttime*total_travel_time + b_xs*xs_total_hws",
-  "activity_time_third ~ c2*ak_log + b2_ttime*total_travel_time + b2_xs*xs_total_hws",
-  "indirect_entropy := a_ttime*b_ttime + a_xs*b_xs",
-  "direct_entropy := c1",
-  "total_entropy := direct_entropy + indirect_entropy",
-  "indirect_activity_time_third := a_ttime*b2_ttime + a_xs*b2_xs",
-  "direct_activity_time_third := c2",
-  "total_activity_time_third := direct_activity_time_third + indirect_activity_time_third"
-)
-sem_syntax2 <- paste(lines2, collapse = "\n")
-cat(sem_syntax2)
-
-
-# Diagnose ----
-fit <- sem(
-  sem_syntax2,
-  data = d_prepped_pd,
-  # ordered = c("trip_chaining_presence"),
-  estimator = "DWLS",
-  sampling.weights = weight_var,
-  std.lv = TRUE
-)
-summary(fit, standardized = TRUE, fit.measures = TRUE, rsquare = TRUE)
-
-# Diagnostics
-cat("Variance ratio: ",
-    max(sapply(d_prepped[num_cols], var, na.rm = TRUE)) /
-    min(sapply(d_prepped[num_cols], function(x) var(x, na.rm = TRUE)), na.rm = TRUE),
-    "\n")
-
 # Complete model ----
 # ===== SEM syntax =====
 ## ------------------------------
@@ -218,8 +182,7 @@ cat("Variance ratio: ",
 ## ------------------------------
 
 # Endogenous & outcomes to exclude from attribute set
-endo_out <- c("ak_log","total_travel_time","xs_total_hws",
-              "entropy_logit","activity_time_third")
+endo_out <- c("ak_log","total_travel_time", "hill_q1")
 
 # Detect transport variables in your selected exogenous set
 mode_vars <- exog_final2[grepl("^mode", exog_final2)]
@@ -249,6 +212,13 @@ ptsub_line <- if (length(pt_var)) {
   paste("pt_sub ~", if (length(exog_attr)) paste(rhs_labeled(exog_attr, "h_"), collapse=" + ") else "1")
 } else character(0)
 
+# Individual -> Trips (trip making equation)
+tt_line_i <- paste(
+  "total_travel_time ~",
+  paste(rhs_labeled(exog_attr, "g_tt_"), collapse = " + ")
+)
+
+
 # 3) ak_log ~ attributes + all transport vars (label per predictor)
 ak_rhs_parts <- character(0)
 if (length(exog_attr)) ak_rhs_parts <- c(ak_rhs_parts, paste(rhs_labeled(exog_attr, "s_"), collapse=" + "))
@@ -259,16 +229,24 @@ aklog_line <- paste("ak_log ~", paste(ak_rhs_parts, collapse=" + "))
 
 # 4) SPA -> travel behavior
 tt_line <- "total_travel_time ~ a_tt*ak_log"
-xs_line <- "xs_total_hws ~ a_xs*ak_log"
+
 
 # 5) Leisure outcomes: SPA + behaviors + attributes (direct)
-ent_line  <- paste("entropy_logit ~ c1*ak_log + b_tt*total_travel_time + b_xs*xs_total_hws",
+ent_line  <- paste("hill_q1 ~ c1*ak_log + b_tt*total_travel_time",
                    if (length(exog_attr)) paste("+", paste(rhs_labeled(exog_attr, "d_"), collapse=" + ")) else "")
-time_line <- paste("activity_time_third ~ c2*ak_log + b2_tt*total_travel_time + b2_xs*xs_total_hws",
-                   if (length(exog_attr)) paste("+", paste(rhs_labeled(exog_attr, "e_"), collapse=" + ")) else "")
+
+
+# TransportMode -> Participation outcomes
+mode_participation_lines <- character(0)
+t_var <- c(mode_vars, pt_sub_var)
+if (length(t_var)) {
+  mode_participation_lines <- c(
+    paste("hill_q1 ~", paste(rhs_labeled(t_var, "r_"), collapse = " + "))
+  )
+}
 
 # 6) Residual covariance between leisure outcomes
-out_cov_line <- "entropy_logit ~~ activity_time_third"
+# out_cov_line <- "hill_q1 ~~ activity_time_third"
 
 # 7) Correlate attributes pairwise (lower triangle only)
 cov_attr <- character(0)
@@ -295,12 +273,9 @@ if (length(mode_vars) && length(pt_var)) {
 
 # 9) SPA decompositions
 spa_decomp <- c(
-  "indirect_entropy := a_tt*b_tt + a_xs*b_xs",
+  "indirect_entropy := a_tt*b_tt",
   "direct_entropy := c1",
-  "total_entropy := direct_entropy + indirect_entropy",
-  "indirect_activity_time_third := a_tt*b2_tt + a_xs*b2_xs",
-  "direct_activity_time_third := c2",
-  "total_activity_time_third := direct_activity_time_third + indirect_activity_time_third"
+  "total_entropy := direct_entropy + indirect_entropy"
 )
 
 # 10) Attribute-level decompositions (direct + via SPA and SPA->behaviors)
@@ -315,25 +290,14 @@ if (length(exog_attr)) {
     # entropy
     ind_e_dir <- paste0("ind_", z, "_entropy_v_spa := spa_from_", z, " * c1")
     ind_e_tt  <- paste0("ind_", z, "_entropy_v_ttime := spa_from_", z, " * a_tt * b_tt")
-    ind_e_xs  <- paste0("ind_", z, "_entropy_v_xs := spa_from_", z, " * a_xs * b_xs")
     ind_e_tot <- paste0("ind_", z, "_entropy_total := ",
-                        "ind_", z, "_entropy_v_spa + ind_", z, "_entropy_v_ttime + ind_", z, "_entropy_v_xs")
+                        "ind_", z, "_entropy_v_spa + ind_", z, "_entropy_v_ttime")
     dir_e     <- paste0("dir_", z, "_entropy := d_", z)
     tot_e     <- paste0("tot_", z, "_entropy := dir_", z, "_entropy + ind_", z, "_entropy_total")
 
-    # activity time
-    ind_t_dir <- paste0("ind_", z, "_time_v_spa := spa_from_", z, " * c2")
-    ind_t_tt  <- paste0("ind_", z, "_time_v_ttime := spa_from_", z, " * a_tt * b2_tt")
-    ind_t_xs  <- paste0("ind_", z, "_time_v_xs := spa_from_", z, " * a_xs * b2_xs")
-    ind_t_tot <- paste0("ind_", z, "_time_total := ",
-                        "ind_", z, "_time_v_spa + ind_", z, "_time_v_ttime + ind_", z, "_time_v_xs")
-    dir_t     <- paste0("dir_", z, "_time := e_", z)
-    tot_t     <- paste0("tot_", z, "_time := dir_", z, "_time + ind_", z, "_time_total")
-
     attr_decomp <- c(attr_decomp,
                      spa_from_z,
-                     ind_e_dir, ind_e_tt, ind_e_xs, ind_e_tot, dir_e, tot_e,
-                     ind_t_dir, ind_t_tt, ind_t_xs, ind_t_tot, dir_t, tot_t)
+                     ind_e_dir, ind_e_tt, ind_e_tot, dir_e, tot_e)
   }
 }
 
@@ -343,15 +307,15 @@ lines <- c(
   ptsub_line,
   aklog_line,
   tt_line,
-  xs_line,
+  tt_line_i, 
   ent_line,
-  time_line,
-  "entropy_logit ~~ activity_time_third",
+  mode_participation_lines,
   cov_attr,
   cov_mode,
   spa_decomp,
   attr_decomp
-)
+  )
+
 sem_syntax <- paste(lines[lines != ""], collapse = "\n")
 cat(sem_syntax)
 
@@ -370,12 +334,12 @@ out <- capture.output(
 # Send to clipboard
 writeClipboard(out)
 
-## --- mapping ---
+## --- mapping ----
 cat_name_dict <- list(
-  entropy_logit        = "Third activity entropy (logit)",
-  activity_time_third  = "Third activity time (min)",
+  hill_q1        = "Leisure activity entropy",
+  #activity_time_third  = "Leisure activity time (min)",
   total_travel_time    = "Total travel time (min)",
-  xs_total_hws         = "Trip chaining complexity",
+  #xs_total_hws         = "Trip chaining complexity",
   ak_log               = "Space-time accessibility (log)",
   pt_sub               = "Public transit subscription",
   active_mode          = "Use of active mode",
@@ -394,14 +358,14 @@ cat_name_dict[["Household_type6"]] <- paste("Household:", household_order[7])
 
 ## --- significant standardized paths from lavaan ---
 pe <- parameterEstimates(fit, standardized = TRUE)
-paths <- subset(pe, op == "~" & pvalue < .05)
+paths <- subset(pe, op == "~" & pvalue < .05 & abs(std.all) > 0.1)
 
 ## --- node groups (IDs must match your lavaan variable names) ---
-attr_nodes <- c("Household_type2","Household_type3","Household_type4","Household_type6","active_mode")
+attr_nodes <- c("Household_type6","active_mode") #"Household_type2","Household_type3","Household_type4"
 trans_nodes <- c("modeCar","pt_sub")
 spa_node    <- "ak_log"
-beh_nodes   <- c("total_travel_time","xs_total_hws")
-out_nodes   <- c("entropy_logit","activity_time_third")
+beh_nodes   <- c("total_travel_time")
+out_nodes   <- c("hill_q1")
 all_nodes   <- c(attr_nodes, trans_nodes, spa_node, beh_nodes, out_nodes)
 
 ## helper to emit cluster with vertical order and spacing
@@ -432,7 +396,7 @@ emit_cluster <- function(cluster_name, label, ids, lab_fontsize = 24) {
 ## --- build DOT ---
 dot <- c(
   "digraph sem {",
-  '  graph [rankdir=LR, nodesep=0.6, ranksep=0.5, splines=spline, fontname=Helvetica, ordering="out"];',
+  '  graph [rankdir=LR, nodesep=0.6, ranksep=0.8, splines=spline, fontname=Helvetica, ordering="out"];',
   '  node  [shape=box, style="rounded,filled", fillcolor="#F9F9F9", fontname=Helvetica, fontsize=20];'
 )
 
@@ -476,6 +440,6 @@ width_cm  <- 10
 
 rsvg_png(
   charToRaw(svg),
-  file = "figures/sem_plot.png",
+  file = "figures/sem_plot_r.png",
   width  = cm_to_px(width_cm, 300)
 )

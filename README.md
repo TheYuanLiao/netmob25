@@ -1,9 +1,9 @@
-# From Reachability to Realization: Urban Mobility Gaps in Access and Efficiency
-Using a comprehensive, multi-layered account of individual mobility patterns across the Île-de-France region, capturing a full week of daily activity for over 3,300 participants, we investigated how different population groups convert accessibility at their neighborhood into realized mobility and how efficiently they navigate urban transport systems, uncovering disparities in both access and travel performance.
+# On the Relationship between Space-Time Accessibility and Leisure Activity Participation
+Using a comprehensive, multi-layered account of individual mobility patterns across the Île-de-France region, capturing a full week of daily activity for over 3,300 participants, we investigated how different population groups convert accessibility at their neighborhood into realized mobility leading them to leisure activities.
 
 ## Dependencies
-Python (version 3.11) code and R (version 4.0.2) code were used to analyse and visualize the data. 
-r5r (2.2.0) was used to compute accessibility to POIs by car and public transit $^1$.
+Python (version 3.11) code and R (version 4.5.1) code were used to analyse and visualize the data. 
+r5r (2.3.0) was used to compute accessibility to POIs by car and public transit $^1$.
 
 ## Data
 The data supporting the findings of this study were provided by [NetMob 2025 Data Challenge](https://netmob.org/www25/datachallenge)$^2$ and 
@@ -26,7 +26,7 @@ This is because some later analysis may depend on earlier steps.
 
 - `src/visualization/` produce figures inserted in the manuscript.
 
-## References
+## Key references
 1. Pereira RHM, Saraiva M, Herszenhut D, Braga CKV, Conway MW (2021). “r5r: Rapid Realistic Routing on Multimodal Transport Networks with R5 in R.” Findings. doi:10.32866/001c. 21262, https://doi.org/10.32866/001c.21262.
 
 2. Chasse A, Kouam AJ, Viana AC, Stanica R, Lobato WV, Ramos G, Deperle G, Bouroudi A, Bussod S, Molano F (2025). “The NetMob25 Dataset: A High-resolution Multi-layered View of Individual Mobility in Greater Paris Region.” arXiv preprint. arXiv:2506.05903, https://arxiv.org/abs/2506.05903.

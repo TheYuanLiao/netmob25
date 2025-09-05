@@ -3,8 +3,6 @@
 # Created by: Yuan Liao
 # Updated   : 2025-08-16
 
-# Start a fresh R session first!
-
 # (A) Make sure nothing has started the JVM yet
 # Set heap + GC options EARLY
 Sys.unsetenv("_JAVA_OPTIONS")

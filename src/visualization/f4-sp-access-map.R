@@ -43,10 +43,10 @@ g1 <- ggmap(paris_basemap) +
   guides(fill = guide_legend(nrow = 1))
 
 g2 <- ggmap(paris_basemap) +
-  geom_sf(data = gdf, aes(fill = tc_non_zero),
+  geom_sf(data = gdf, aes(fill = total_travel_time),
           color = NA, size = 0, alpha = 0.7, 
           show.legend = T, inherit.aes = FALSE) +
-  scale_fill_viridis(name = "% inhabitants w/ trip chaining", trans = "log10") +
+  scale_fill_viridis(name = "Total travel time", trans = "log10") +
   # Add a scale bar
   annotation_scale(location = "bl", width_hint = 0.3, text_cex = 0.5) +  
   annotation_north_arrow(
@@ -62,10 +62,10 @@ g2 <- ggmap(paris_basemap) +
   guides(fill = guide_legend(nrow = 1))
 
 g3 <- ggmap(paris_basemap) +
-  geom_sf(data = gdf, aes(fill = entropy_mm_norm),
+  geom_sf(data = gdf, aes(fill = hill_q1),
           color = NA, size = 0, alpha = 0.7, 
           show.legend = T, inherit.aes = FALSE) +
-  scale_fill_viridis(name = "Third activity entropy", trans = "log10") +
+  scale_fill_viridis(name = "Leisure activity diversity", trans = "log10") +
   # Add a scale bar
   annotation_scale(location = "bl", width_hint = 0.3, text_cex = 0.5) +  
   annotation_north_arrow(
@@ -80,24 +80,24 @@ g3 <- ggmap(paris_basemap) +
         plot.title = element_text(hjust = 0.5)) +
   guides(fill = guide_legend(nrow = 1))
 
-g4 <- ggmap(paris_basemap) +
-  geom_sf(data = gdf, aes(fill = activity_time_third),
-          color = NA, size = 0, alpha = 0.7, 
-          show.legend = T, inherit.aes = FALSE) +
-  scale_fill_viridis(name = "Third activity time (min)", trans = "log10") +
-  # Add a scale bar
-  annotation_scale(location = "bl", width_hint = 0.3, text_cex = 0.5) +  
-  annotation_north_arrow(
-    location = "tr", which_north = "true",
-    style = north_arrow_fancy_orienteering(text_size = 6),
-    height = unit(0.8, "cm"),  # Adjust arrow height
-    width = unit(0.8, "cm")    # Adjust arrow width
-  ) +
-  theme_void() +
-  theme(plot.margin = margin(0.1, 0.1, 0.1, 0, "cm"),
-        legend.position = "top",
-        plot.title = element_text(hjust = 0.5)) +
-  guides(fill = guide_legend(nrow = 1))
+# g4 <- ggmap(paris_basemap) +
+#   geom_sf(data = gdf, aes(fill = activity_time_third),
+#           color = NA, size = 0, alpha = 0.7, 
+#           show.legend = T, inherit.aes = FALSE) +
+#   scale_fill_viridis(name = "Leisure activity time (min)", trans = "log10") +
+#   # Add a scale bar
+#   annotation_scale(location = "bl", width_hint = 0.3, text_cex = 0.5) +  
+#   annotation_north_arrow(
+#     location = "tr", which_north = "true",
+#     style = north_arrow_fancy_orienteering(text_size = 6),
+#     height = unit(0.8, "cm"),  # Adjust arrow height
+#     width = unit(0.8, "cm")    # Adjust arrow width
+#   ) +
+#   theme_void() +
+#   theme(plot.margin = margin(0.1, 0.1, 0.1, 0, "cm"),
+#         legend.position = "top",
+#         plot.title = element_text(hjust = 0.5)) +
+#   guides(fill = guide_legend(nrow = 1))
 
 # g4 <- ggplot(data=gdf, aes(x=ak_non_zero, y=tc_non_zero)) +
 #     geom_point(color='steelblue', alpha=0.7) + 
@@ -116,6 +116,12 @@ g4 <- ggmap(paris_basemap) +
 #g <- ggarrange(g1, g2, ncol = 2, nrow = 1, labels = c('a', 'b'))
 # g0 <- ggarrange(g4, g5, ncol = 2, nrow = 1, labels = c('d', 'e'))
 #g1 <- ggarrange(g3, g0, ncol = 2, nrow = 1, labels = c('c', ''))
-G <- ggarrange(g1, g2, g3, g4, ncol = 2, nrow = 2)
-ggsave(filename = "figures/ak_tc_map.png", plot = G, bg='white',
-       width = 12, height = 10, unit = "in", dpi = 300)
+
+
+# G <- ggarrange(g1, g2, g3, g4, ncol = 2, nrow = 2)
+# ggsave(filename = "figures/ak_tc_map.png", plot = G, bg='white',
+#        width = 12, height = 10, unit = "in", dpi = 300)
+
+G <- ggarrange(g1, g2, g3, ncol = 3, nrow = 1, labels=c('a', 'b', 'c'))
+ggsave(filename = "figures/ak_outcome_map.png", plot = G, bg='white',
+       width = 13, height = 4, unit = "in", dpi = 300)
