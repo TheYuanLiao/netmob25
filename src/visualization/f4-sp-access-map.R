@@ -24,29 +24,43 @@ paris_basemap <- get_stadiamap(bbox, maptype="stamen_toner_lines", zoom = z.leve
 
 
 g1 <- ggmap(paris_basemap) +
-  geom_sf(data = gdf, aes(fill = ak_non_zero),
-          color = NA, size = 0, alpha = 0.7, 
-          show.legend = T, inherit.aes = FALSE) +
-  scale_fill_viridis(name = "% inhabitants w/ SPA > 0", trans = "log10") +
-  # Add a scale bar
-  annotation_scale(location = "bl", width_hint = 0.3, text_cex = 0.5) +  
+  geom_sf(
+    data = gdf,
+    aes(fill = ak_non_zero),
+    color = NA, size = 0, alpha = 0.7,
+    show.legend = TRUE, inherit.aes = FALSE
+  ) +
+  scale_fill_viridis_c(
+    name = "% inhabitants w/ STA value > 0",
+    trans = "log10"
+  ) +
+  annotation_scale(location = "bl", width_hint = 0.3, text_cex = 0.5) +
   annotation_north_arrow(
     location = "tr", which_north = "true",
     style = north_arrow_fancy_orienteering(text_size = 6),
-    height = unit(0.8, "cm"),  # Adjust arrow height
-    width = unit(0.8, "cm")    # Adjust arrow width
+    height = unit(0.8, "cm"),
+    width  = unit(0.8, "cm")
   ) +
   theme_void() +
-  theme(plot.margin = margin(0.1, 0.1, 0.1, 0, "cm"),
-        legend.position = "top",
-        plot.title = element_text(hjust = 0.5)) +
-  guides(fill = guide_legend(nrow = 1))
+  theme(
+    plot.margin = margin(0.1, 0.1, 0.1, 0, "cm"),
+    legend.position = "top",
+    plot.title = element_text(hjust = 0.5)
+  ) +
+  guides(fill = guide_colorbar(
+    barwidth = 10,
+    barheight = 0.5,
+    title.position = "top"
+  ))
 
 g2 <- ggmap(paris_basemap) +
-  geom_sf(data = gdf, aes(fill = total_travel_time),
-          color = NA, size = 0, alpha = 0.7, 
-          show.legend = T, inherit.aes = FALSE) +
-  scale_fill_viridis(name = "Total travel time", trans = "log10") +
+  geom_sf(
+    data = gdf,
+    aes(fill = total_travel_time),
+    color = NA, size = 0, alpha = 0.7,
+    show.legend = TRUE, inherit.aes = FALSE
+  ) +
+  scale_fill_viridis_c(name = "Total travel time", trans = "log10") +
   # Add a scale bar
   annotation_scale(location = "bl", width_hint = 0.3, text_cex = 0.5) +  
   annotation_north_arrow(
@@ -59,13 +73,18 @@ g2 <- ggmap(paris_basemap) +
   theme(plot.margin = margin(0.1, 0.1, 0.1, 0, "cm"),
         legend.position = "top",
         plot.title = element_text(hjust = 0.5)) +
-  guides(fill = guide_legend(nrow = 1))
+  guides(fill = guide_colorbar(
+    barwidth = 10,
+    barheight = 0.5,
+    title.position = "top"
+  ))
 
 g3 <- ggmap(paris_basemap) +
   geom_sf(data = gdf, aes(fill = hill_q1),
           color = NA, size = 0, alpha = 0.7, 
-          show.legend = T, inherit.aes = FALSE) +
-  scale_fill_viridis(name = "Leisure activity diversity", trans = "log10") +
+          show.legend = TRUE, inherit.aes = FALSE
+  ) +
+  scale_fill_viridis_c(name = "Leisure location diversity", trans = "log10") +
   # Add a scale bar
   annotation_scale(location = "bl", width_hint = 0.3, text_cex = 0.5) +  
   annotation_north_arrow(
@@ -78,7 +97,11 @@ g3 <- ggmap(paris_basemap) +
   theme(plot.margin = margin(0.1, 0.1, 0.1, 0, "cm"),
         legend.position = "top",
         plot.title = element_text(hjust = 0.5)) +
-  guides(fill = guide_legend(nrow = 1))
+  guides(fill = guide_colorbar(
+    barwidth = 10,
+    barheight = 0.5,
+    title.position = "top"
+  ))
 
 # g4 <- ggmap(paris_basemap) +
 #   geom_sf(data = gdf, aes(fill = activity_time_third),

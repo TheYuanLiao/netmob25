@@ -336,11 +336,11 @@ writeClipboard(out)
 
 ## --- mapping ----
 cat_name_dict <- list(
-  hill_q1        = "Leisure activity entropy",
+  hill_q1        = "Leisure location diversity",
   #activity_time_third  = "Leisure activity time (min)",
   total_travel_time    = "Total travel time (min)",
   #xs_total_hws         = "Trip chaining complexity",
-  ak_log               = "Space-time accessibility (log)",
+  ak_log               = "STA value", # "Ai (log)",
   pt_sub               = "Public transit subscription",
   active_mode          = "Use of active mode",
   modeCar              = "Car as main mode"
@@ -411,7 +411,7 @@ dot <- c(dot,
   emit_cluster("cluster_attr", "Individual attributes", attr_nodes),
   emit_cluster("cluster_trans", "Transport mode",  trans_nodes),
   emit_cluster("cluster_spa",   "Space-time accessibility",        spa_node),
-  emit_cluster("cluster_beh",   "Trip making",   beh_nodes),
+  emit_cluster("cluster_beh",   "Mobility",   beh_nodes),
   emit_cluster("cluster_out",   "Leisure activity participation",    out_nodes)
 )
 

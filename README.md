@@ -1,5 +1,5 @@
 # On the Relationship between Space-Time Accessibility and Leisure Activity Participation
-Using a comprehensive, multi-layered account of individual mobility patterns across the Île-de-France region, capturing a full week of daily activity for over 3,300 participants, we investigated how different population groups convert accessibility at their neighborhood into realized mobility leading them to leisure activities.
+Using a comprehensive, multi-layered account of individual mobility patterns across the Île-de-France region, capturing a full week of daily activity for over 3,300 participants, we investigated how different population groups convert accessibility into realized mobility leading them to leisure activities.
 
 ## Dependencies
 Python (version 3.11) code and R (version 4.5.1) code were used to analyse and visualize the data. 
