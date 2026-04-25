@@ -1,0 +1,64 @@
+22:39:54.372 [INFO ] org.ipea.r5r.Process.R5Process - 1 out of 10000 origins processed.
+23:11:19.502 [INFO ] org.ipea.r5r.Process.R5Process - 1001 out of 10000 origins processed.
+23:42:47.053 [INFO ] org.ipea.r5r.Process.R5Process - 2001 out of 10000 origins processed.
+00:14:15.306 [INFO ] org.ipea.r5r.Process.R5Process - 3001 out of 10000 origins processed.
+00:45:27.685 [INFO ] org.ipea.r5r.Process.R5Process - 4001 out of 10000 origins processed.
+01:16:49.992 [INFO ] org.ipea.r5r.Process.R5Process - 5001 out of 10000 origins processed.
+01:48:13.295 [INFO ] org.ipea.r5r.Process.R5Process - 6001 out of 10000 origins processed.
+02:19:29.535 [INFO ] org.ipea.r5r.Process.R5Process - 7001 out of 10000 origins processed.
+02:50:58.573 [INFO ] org.ipea.r5r.Process.R5Process - 8001 out of 10000 origins processed.
+03:22:23.094 [INFO ] org.ipea.r5r.Process.R5Process - 9001 out of 10000 origins processed.
+03:57:11.975 [INFO ] org.ipea.r5r.Process.R5Process - 10000 out of 10000 origins processed.
+03:57:11.975 [INFO ] org.ipea.r5r.Process.R5Process - .. DONE!
+03:57:11.975 [INFO ] org.ipea.r5r.Process.R5Process - Consolidating results...
+03:57:12.037 [INFO ] org.ipea.r5r.Process.R5Process -  DONE!
+03:57:53.322 [INFO ] org.ipea.r5r.Process.R5Process - 1 out of 10000 origins processed.
+04:29:51.055 [INFO ] org.ipea.r5r.Process.R5Process - 1001 out of 10000 origins processed.
+05:02:07.755 [INFO ] org.ipea.r5r.Process.R5Process - 2001 out of 10000 origins processed.
+05:34:23.761 [INFO ] org.ipea.r5r.Process.R5Process - 3001 out of 10000 origins processed.
+06:06:39.072 [INFO ] org.ipea.r5r.Process.R5Process - 4001 out of 10000 origins processed.
+06:38:49.765 [INFO ] org.ipea.r5r.Process.R5Process - 5001 out of 10000 origins processed.
+07:11:14.289 [INFO ] org.ipea.r5r.Process.R5Process - 6001 out of 10000 origins processed.
+07:43:36.910 [INFO ] org.ipea.r5r.Process.R5Process - 7001 out of 10000 origins processed.
+08:15:45.613 [INFO ] org.ipea.r5r.Process.R5Process - 8001 out of 10000 origins processed.
+08:48:03.131 [INFO ] org.ipea.r5r.Process.R5Process - 9001 out of 10000 origins processed.
+09:24:18.799 [INFO ] org.ipea.r5r.Process.R5Process - 10000 out of 10000 origins processed.
+09:24:18.799 [INFO ] org.ipea.r5r.Process.R5Process - .. DONE!
+09:24:18.799 [INFO ] org.ipea.r5r.Process.R5Process - Consolidating results...
+09:24:18.841 [INFO ] org.ipea.r5r.Process.R5Process -  DONE!
+09:24:56.941 [INFO ] org.ipea.r5r.Process.R5Process - 1 out of 10000 origins processed.
+09:56:50.988 [INFO ] org.ipea.r5r.Process.R5Process - 1001 out of 10000 origins processed.
+10:29:02.536 [INFO ] org.ipea.r5r.Process.R5Process - 2001 out of 10000 origins processed.
+11:01:11.272 [INFO ] org.ipea.r5r.Process.R5Process - 3001 out of 10000 origins processed.
+11:33:30.451 [INFO ] org.ipea.r5r.Process.R5Process - 4001 out of 10000 origins processed.
+12:05:50.392 [INFO ] org.ipea.r5r.Process.R5Process - 5001 out of 10000 origins processed.
+12:37:58.920 [INFO ] org.ipea.r5r.Process.R5Process - 6001 out of 10000 origins processed.
+13:10:12.406 [INFO ] org.ipea.r5r.Process.R5Process - 7001 out of 10000 origins processed.
+13:42:28.937 [INFO ] org.ipea.r5r.Process.R5Process - 8001 out of 10000 origins processed.
+14:14:55.710 [INFO ] org.ipea.r5r.Process.R5Process - 9001 out of 10000 origins processed.
+14:51:12.656 [INFO ] org.ipea.r5r.Process.R5Process - 10000 out of 10000 origins processed.
+14:51:12.672 [INFO ] org.ipea.r5r.Process.R5Process - .. DONE!
+14:51:12.672 [INFO ] org.ipea.r5r.Process.R5Process - Consolidating results...
+14:51:12.712 [INFO ] org.ipea.r5r.Process.R5Process -  DONE!
+14:51:49.271 [INFO ] org.ipea.r5r.Process.R5Process - 1 out of 10000 origins processed.
+15:23:35.376 [INFO ] org.ipea.r5r.Process.R5Process - 1001 out of 10000 origins processed.
+15:55:42.623 [INFO ] org.ipea.r5r.Process.R5Process - 2001 out of 10000 origins processed.
+16:27:45.720 [INFO ] org.ipea.r5r.Process.R5Process - 3001 out of 10000 origins processed.
+17:00:03.253 [INFO ] org.ipea.r5r.Process.R5Process - 4001 out of 10000 origins processed.
+17:32:16.035 [INFO ] org.ipea.r5r.Process.R5Process - 5001 out of 10000 origins processed.
+18:04:22.850 [INFO ] org.ipea.r5r.Process.R5Process - 6001 out of 10000 origins processed.
+18:36:30.287 [INFO ] org.ipea.r5r.Process.R5Process - 7001 out of 10000 origins processed.
+19:08:41.118 [INFO ] org.ipea.r5r.Process.R5Process - 8001 out of 10000 origins processed.
+19:40:59.414 [INFO ] org.ipea.r5r.Process.R5Process - 9001 out of 10000 origins processed.
+20:17:21.302 [INFO ] org.ipea.r5r.Process.R5Process - 10000 out of 10000 origins processed.
+20:17:21.318 [INFO ] org.ipea.r5r.Process.R5Process - .. DONE!
+20:17:21.318 [INFO ] org.ipea.r5r.Process.R5Process - Consolidating results...
+20:17:21.357 [INFO ] org.ipea.r5r.Process.R5Process -  DONE!
+20:17:59.074 [INFO ] org.ipea.r5r.Process.R5Process - 1 out of 3576 origins processed.
+20:49:30.950 [INFO ] org.ipea.r5r.Process.R5Process - 1001 out of 3576 origins processed.
+21:21:34.680 [INFO ] org.ipea.r5r.Process.R5Process - 2001 out of 3576 origins processed.
+21:53:21.971 [INFO ] org.ipea.r5r.Process.R5Process - 3001 out of 3576 origins processed.
+22:13:13.566 [INFO ] org.ipea.r5r.Process.R5Process - 3576 out of 3576 origins processed.
+22:13:13.582 [INFO ] org.ipea.r5r.Process.R5Process - .. DONE!
+22:13:13.582 [INFO ] org.ipea.r5r.Process.R5Process - Consolidating results...
+22:13:13.599 [INFO ] org.ipea.r5r.Process.R5Process -  DONE!

@@ -1,138 +1,162 @@
-# Title     : OD travel time by public transit / car
-# Objective : Compute travel time from each origin to each destination (per amenity) by hour
+# Title     : OD travel time from Leisure POIs to Home (Simple)
+# Objective : Compute all POIs to all homes with max_dur=120
 # Created by: Yuan Liao
-# Updated   : 2025-08-16
+# Created: 2026-04-18
+#
+# Simple approach: one r5r call per mode-hour, filter in post-processing
 
-# Start a fresh R session first!
+# ============================================================================
+# CONFIGURATION
+# ============================================================================
 
-# (A) Make sure nothing has started the JVM yet
+config <- list(
+  data_path = "dbs/sp_accessibility_v2/data",
+  output_path = "dbs/sp_accessibility_v2",
+
+  # Departure hours: Car only 17, PT: 16, 17, 18
+  departure_hours_pt = c(16, 17, 18),
+  departure_hours_car = c(17),
+
+  max_trip_duration = 120,
+
+  modes = list(
+    pt = c("WALK", "TRANSIT"),
+    car = "CAR"
+  ),
+
+  # Chunk POIs if memory is an issue (NULL = no chunking)
+  poi_chunk_size = 10000
+)
+
+# ============================================================================
+# SETUP
+# ============================================================================
+
 Sys.unsetenv("_JAVA_OPTIONS")
 Sys.unsetenv("JAVA_TOOL_OPTIONS")
 Sys.setenv(RJAVA_JVM_ARGS = "-Xms48g -Xmx53g -XX:+UseG1GC -XX:+UseStringDeduplication")
-options(java.parameters = c("-Xms48g","-Xmx53g","-XX:+UseG1GC","-XX:+UseStringDeduplication"))
+options(java.parameters = c("-Xms48g", "-Xmx53g", "-XX:+UseG1GC", "-XX:+UseStringDeduplication"))
 
-# (B) Confirm 64-bit Java
-system("java -version")     # Should say: 64-Bit Server VM
-
-# (C) Start the JVM and query heap
 library(rJava)
 rJava::.jinit()
-rt <- rJava::.jcall("java/lang/Runtime","Ljava/lang/Runtime;","getRuntime")
-maxB   <- rJava::.jcall(rt,"J","maxMemory")
-totalB <- rJava::.jcall(rt,"J","totalMemory")
-freeB  <- rJava::.jcall(rt,"J","freeMemory")
-cat(sprintf("max=%.1f GB  total=%.1f GB  free=%.1f GB\n", maxB/2^30, totalB/2^30, freeB/2^30))
-
 library(r5r)
 library(data.table)
-library(dplyr)
-library(magrittr)   # for %>%
 
-tp_path   <- "dbs/sp_accessibility_r"
-data_path <- file.path(tp_path, "data")
-r5r_core  <- setup_r5(data_path = data_path)
+rt <- rJava::.jcall("java/lang/Runtime", "Ljava/lang/Runtime;", "getRuntime")
+cat(sprintf("JVM max memory: %.1f GB\n", rJava::.jcall(rt, "J", "maxMemory") / 2^30))
 
-clean_after_run <- function(objects_to_rm = c("origins","destinations","tt"),
-                            force_sleep = 0.5) {
-  for (nm in objects_to_rm) {
-    if (exists(nm, inherits = FALSE)) rm(list = nm, envir = parent.frame())
-  }
-  invisible(gc(full = TRUE, reset = TRUE))
+r5r_core <- setup_r5(data_path = config$data_path)
 
-  try(rJava::.jcall("java/lang/System", "V", "gc"), silent = TRUE)
-  try(rJava::.jcall("java/lang/System", "V", "runFinalization"), silent = TRUE)
-  try(rJava::.jcall("java/lang/System", "V", "gc"), silent = TRUE)
+# ============================================================================
+# LOAD DATA
+# ============================================================================
 
-  if (!is.null(force_sleep) && force_sleep > 0) Sys.sleep(force_sleep)
+df_pois <- fread(file.path(config$data_path, "destinations_leisure.csv"))
+df_homes <- fread(file.path(config$data_path, "destinations_home.csv"))
+df_budget <- fread(file.path(config$data_path, "time_budget.csv"))
+
+message(sprintf("POIs: %d, Homes: %d", nrow(df_pois), nrow(df_homes)))
+
+# Filter homes to valid individuals (has time_hw, positive remaining time)
+df_budget <- df_budget[!is.na(time_hw) & (config$max_trip_duration - time_hw * 2) > 0]
+message(sprintf("Valid individuals: %d", nrow(df_budget)))
+
+if ("is_car" %in% names(df_budget)) {
+  message(sprintf("  Car users: %d, Non-car: %d",
+                  sum(df_budget$is_car == 1), sum(df_budget$is_car == 0)))
 }
 
-# ---------- helper: compute OD travel time matrix ----------
-tt.process <- function(hour,
-                       mode = c("WALK","TRANSIT"),
-                       fn = "",
-                       max_dur_min = 15,
-                       percentiles = 50L,
-                       part = NULL) {
+# ============================================================================
+# MAIN
+# ============================================================================
 
-  if (is.null(part)) {
-    origins_file <- file.path(data_path, sprintf("origins_%s_%d.csv", fn, max_dur_min))
-    out_file     <- file.path(tp_path, sprintf("tt_kh_%s_%02d_%02d.csv", fn, hour, max_dur_min))
-  } else {
-    origins_file <- file.path(data_path, sprintf("origins_%s_%d_part%d.csv", fn, max_dur_min, part))
-    out_file     <- file.path(tp_path, sprintf("tt_kh_%s_%02d_%02d_part%d.csv", fn, hour, max_dur_min, part))
-  }
+for (mode_name in names(config$modes)) {
+  mode_spec <- config$modes[[mode_name]]
+  departure_hours <- if (mode_name == "car") config$departure_hours_car else config$departure_hours_pt
 
-  destinations_file <- file.path(data_path, sprintf("destinations_%s.csv", fn))
-
-  if (!file.exists(origins_file)) stop("Origins file not found: ", origins_file)
-  if (!file.exists(destinations_file)) stop("Destinations file not found: ", destinations_file)
-
-  origins      <- data.table::fread(origins_file)
-  destinations <- data.table::fread(destinations_file)
-
-  departure_datetime <- as.POSIXct(sprintf("07-07-2025 %02d:00:00", hour),
-                                   format = "%d-%m-%Y %H:%M:%S", tz = "UTC")
-
-  tt <- r5r::travel_time_matrix(
-    r5r_core           = r5r_core,
-    origins            = origins,
-    destinations       = destinations,
-    mode               = mode,
-    departure_datetime = departure_datetime,
-    max_trip_duration  = max_dur_min,
-    percentiles        = percentiles,
-    progress           = TRUE,
-    verbose            = FALSE
-  )
-
-  # Convert travel_time* cols to numeric
-  time_cols <- grep("^travel_time", names(tt), value = TRUE)
-  for (col in time_cols) tt[[col]] <- as.numeric(tt[[col]])
-
-  # Keep rows with at least one non-NA travel_time
-  tt <- tt[rowSums(!is.na(tt[, ..time_cols])) > 0, ]
-
-  data.table::fwrite(tt, file = out_file)
-  clean_after_run(objects_to_rm = c("origins", "destinations", "tt"))
-}
-
-run_for_all_parts <- function(hour, fn, max_dur_min, mode, percentiles = 50) {
-  pat <- sprintf("^origins_%s_%d_part(\\d+)\\.csv$", fn, max_dur_min)
-  files <- list.files(data_path, pattern = pat)
-  parts <- sort(as.integer(sub(pat, "\\1", files)))
-
-  if (length(parts) == 0) {
-    tt.process(hour = hour, fn = fn, mode = mode,
-               max_dur_min = max_dur_min, percentiles = percentiles, part = NULL)
-  } else {
-    for (p in parts) {
-      message(sprintf("Running %s max=%d part=%d", fn, max_dur_min, p))
-      tt.process(hour = hour, fn = fn, mode = mode,
-                 max_dur_min = max_dur_min, percentiles = percentiles, part = p)
+  # Filter homes by mode
+  if ("is_car" %in% names(df_budget)) {
+    if (mode_name == "car") {
+      valid_ids <- df_budget[is_car == 1]$ID
+    } else {
+      valid_ids <- df_budget[is_car == 0]$ID
     }
+    homes <- df_homes[id %in% valid_ids]
+  } else {
+    homes <- df_homes[id %in% df_budget$ID]
+  }
+
+  message(sprintf("\n%s mode: %d homes", toupper(mode_name), nrow(homes)))
+
+  for (hour in departure_hours) {
+    key <- sprintf("%s_%02d", mode_name, hour)
+    output_file <- file.path(config$output_path, sprintf("tt_kh_%s.csv", key))
+
+    if (file.exists(output_file)) {
+      message(sprintf("  %s: exists, skipping", key))
+      next
+    }
+
+    message(sprintf("\n=== %s ===", key))
+
+    departure_datetime <- as.POSIXct(
+      sprintf("07-07-2025 %02d:00:00", hour),
+      format = "%d-%m-%Y %H:%M:%S",
+      tz = "UTC"
+    )
+
+    # Compute (with optional chunking)
+    if (is.null(config$poi_chunk_size) || nrow(df_pois) <= config$poi_chunk_size) {
+      message(sprintf("Computing %d POIs x %d homes...", nrow(df_pois), nrow(homes)))
+
+      tt <- travel_time_matrix(
+        r5r_core = r5r_core,
+        origins = df_pois,
+        destinations = homes,
+        mode = mode_spec,
+        departure_datetime = departure_datetime,
+        max_trip_duration = config$max_trip_duration,
+        percentiles = 50L,
+        progress = TRUE
+      )
+    } else {
+      n_chunks <- ceiling(nrow(df_pois) / config$poi_chunk_size)
+      message(sprintf("Computing in %d chunks...", n_chunks))
+
+      tt_list <- list()
+      for (i in seq_len(n_chunks)) {
+        start_idx <- (i - 1) * config$poi_chunk_size + 1
+        end_idx <- min(i * config$poi_chunk_size, nrow(df_pois))
+
+        message(sprintf("  Chunk %d/%d: POIs %d-%d", i, n_chunks, start_idx, end_idx))
+
+        tt_chunk <- travel_time_matrix(
+          r5r_core = r5r_core,
+          origins = df_pois[start_idx:end_idx],
+          destinations = homes,
+          mode = mode_spec,
+          departure_datetime = departure_datetime,
+          max_trip_duration = config$max_trip_duration,
+          percentiles = 50L,
+          progress = TRUE
+        )
+
+        tt_list[[i]] <- tt_chunk
+        gc()
+      }
+
+      tt <- rbindlist(tt_list)
+    }
+
+    # Remove NAs and save
+    setDT(tt)
+    tt <- tt[!is.na(travel_time_p50)]
+
+    fwrite(tt, output_file)
+    message(sprintf("Saved %d rows to %s", nrow(tt), output_file))
+
+    gc()
   }
 }
 
-# ---------- Public transit (WALK + TRANSIT), 90-min cap ----------
-
-hr <- 17
-#for (situation in 1:3) {
-for (max_dur_min in c(15, 30, 45, 60, 75, 90)) {
-  run_for_all_parts(hour = hr,
-                    fn   = "pt",
-                    max_dur_min = max_dur_min,
-                    mode = c("WALK", "TRANSIT"),
-                    percentiles = 50)
-}
-
-# ---------- Car, 90-min cap ----------
-hr <- 17
-#for (situation in 1:3) {
-for (max_dur_min in c(15, 30, 45, 60, 75, 90)) {
-  run_for_all_parts(hour = hr,
-                    fn   = "car",
-                    max_dur_min = max_dur_min,
-                    mode = "CAR",
-                    percentiles = 50)
-}
-#}
+message("\n=== Complete ===")

@@ -1,0 +1,20 @@
+# Measurement model
+leisure_part =~ 1*hill_q1 + lam2*mean_leisure_duration
+
+# Structural model
+ak_ihs ~ s_female*female + s_edu_high*edu_high + s_poverty_rate*poverty_rate + t_mode_pt*mode_pt + t_pt_sub*pt_sub + t_active_mode*active_mode
+total_travel_time ~ a*ak_ihs + g_female*female + g_edu_high*edu_high + g_poverty_rate*poverty_rate + m_mode_pt*mode_pt + m_pt_sub*pt_sub + m_active_mode*active_mode
+leisure_part ~ c*ak_ihs + b*total_travel_time + d_female*female + d_edu_high*edu_high + d_poverty_rate*poverty_rate + d_hh_6*hh_6 + r_mode_pt*mode_pt + r_pt_sub*pt_sub + r_active_mode*active_mode
+
+# Effect decomposition
+indirect := a * b
+direct := c
+total := c + a * b
+
+# Effects on indicators
+direct_div := c * 1
+direct_dur := c * lam2
+indirect_div := a * b * 1
+indirect_dur := a * b * lam2
+total_div := (c + a * b) * 1
+total_dur := (c + a * b) * lam2

@@ -1,0 +1,31 @@
+digraph sem {
+  graph [rankdir=LR, nodesep=0.8, ranksep=1.0, splines=spline, fontname=Helvetica, fontsize=24];
+  node [shape=box, style="rounded,filled", fillcolor="#F9F9F9", fontname=Helvetica, fontsize=28];
+  edge [fontname=Helvetica, fontsize=24];
+  leisure_part [shape=ellipse, fillcolor="#E8F4FD", label="Leisure\nparticipation"];
+  "ak_ihs" [label="Space-time\naccessibility"];
+  "total_travel_time" [label="Travel time"];
+  "mode_pt" [label="Public transit"];
+  "pt_sub" [label="PT subscription"];
+  "active_mode" [label="Active mode"];
+  "female" [label="Female"];
+  "edu_high" [label="Education:\nHigh"];
+  "poverty_rate" [label="Poverty rate"];
+  "hh_6" [label="Couple w/\nchildren"];
+  "hill_q1" [label="Location\ndiversity"];
+  "mean_leisure_duration" [label="Leisure\nduration"];
+  "mode_pt" -> "ak_ihs" [label="-0.21", color="#E66100", penwidth=1.6];
+  "pt_sub" -> "ak_ihs" [label="-0.15", color="#E66100", penwidth=1.4];
+  "active_mode" -> "ak_ihs" [label="0.16", color="#40B0A6", penwidth=1.5];
+  "ak_ihs" -> "total_travel_time" [label="-0.33", color="#E66100", penwidth=2.0];
+  "female" -> "total_travel_time" [label="-0.12", color="#E66100", penwidth=1.4];
+  "active_mode" -> "total_travel_time" [label="-0.18", color="#E66100", penwidth=1.5];
+  "ak_ihs" -> "leisure_part" [label="0.17", color="#40B0A6", penwidth=1.5];
+  "total_travel_time" -> "leisure_part" [label="0.13", color="#40B0A6", penwidth=1.4];
+  "edu_high" -> "leisure_part" [label="0.18", color="#40B0A6", penwidth=1.5];
+  "poverty_rate" -> "leisure_part" [label="-0.16", color="#E66100", penwidth=1.5];
+  "hh_6" -> "leisure_part" [label="-0.25", color="#E66100", penwidth=1.8];
+  "active_mode" -> "leisure_part" [label="0.21", color="#40B0A6", penwidth=1.6];
+  "leisure_part" -> "hill_q1" [label="0.57", style=dashed, color="#666666"];
+  "leisure_part" -> "mean_leisure_duration" [label="0.54", style=dashed, color="#666666"];
+}

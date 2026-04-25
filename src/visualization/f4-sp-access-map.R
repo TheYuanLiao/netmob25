@@ -15,7 +15,7 @@ library(ggpubr)
 options(scipen = 999)   # higher penalty against scientific notation
 
 # Basemaps ----
-gdf <- st_read("results/h3_s7_ak_tc.gpkg")
+gdf <- st_read("results/h3_s7_sta_v2.gpkg")
 ggmap::register_stadiamaps(key = "1ffbd641-ab9c-448b-8f83-95630d3c7ee3")
 z.level <- 11
 bbox <- st_bbox(gdf)
@@ -26,13 +26,13 @@ paris_basemap <- get_stadiamap(bbox, maptype="stamen_toner_lines", zoom = z.leve
 g1 <- ggmap(paris_basemap) +
   geom_sf(
     data = gdf,
-    aes(fill = ak_non_zero),
+    aes(fill = sta_nonzero_share),
     color = NA, size = 0, alpha = 0.7,
     show.legend = TRUE, inherit.aes = FALSE
   ) +
   scale_fill_viridis_c(
-    name = "% inhabitants w/ STA value > 0",
-    trans = "log10"
+    name = "% inhabitants w/ STA value > 0"
+#    trans = "log10"
   ) +
   annotation_scale(location = "bl", width_hint = 0.3, text_cex = 0.5) +
   annotation_north_arrow(
@@ -56,11 +56,11 @@ g1 <- ggmap(paris_basemap) +
 g2 <- ggmap(paris_basemap) +
   geom_sf(
     data = gdf,
-    aes(fill = total_travel_time),
+    aes(fill = duration_median),
     color = NA, size = 0, alpha = 0.7,
     show.legend = TRUE, inherit.aes = FALSE
   ) +
-  scale_fill_viridis_c(name = "Total travel time", trans = "log10") +
+  scale_fill_viridis_c(name = "Leisure duration (min)", trans = "log10") +
   # Add a scale bar
   annotation_scale(location = "bl", width_hint = 0.3, text_cex = 0.5) +  
   annotation_north_arrow(
@@ -80,11 +80,11 @@ g2 <- ggmap(paris_basemap) +
   ))
 
 g3 <- ggmap(paris_basemap) +
-  geom_sf(data = gdf, aes(fill = hill_q1),
+  geom_sf(data = gdf, aes(fill = hill_q1_median),
           color = NA, size = 0, alpha = 0.7, 
           show.legend = TRUE, inherit.aes = FALSE
   ) +
-  scale_fill_viridis_c(name = "Leisure location diversity", trans = "log10") +
+  scale_fill_viridis_c(name = "Leisure location diversity") +
   # Add a scale bar
   annotation_scale(location = "bl", width_hint = 0.3, text_cex = 0.5) +  
   annotation_north_arrow(
@@ -145,6 +145,6 @@ g3 <- ggmap(paris_basemap) +
 # ggsave(filename = "figures/ak_tc_map.png", plot = G, bg='white',
 #        width = 12, height = 10, unit = "in", dpi = 300)
 
-G <- ggarrange(g1, g2, g3, ncol = 3, nrow = 1, labels=c('a', 'b', 'c'))
+G <- ggarrange(g1, g3, g2, ncol = 3, nrow = 1, labels=c('a', 'b', 'c'))
 ggsave(filename = "figures/ak_outcome_map.png", plot = G, bg='white',
        width = 13, height = 4, unit = "in", dpi = 300)

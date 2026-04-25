@@ -148,3 +148,85 @@ if (w_top < w_bottom) {
 final_figure <- image_append(c(image1_padded, bottom_row_padded), stack = TRUE)
 
 image_write(final_figure, "figures/selectivity.png")
+
+# Figure sensitivity ----
+img_a <- read.img(path = "figures/sensitivity_budget_distribution.png", lb = "a")
+img_b <- read.img(path = "figures/sensitivity_budget_nonzero.png", lb = "b")
+img_c <- read.img(path = "figures/sensitivity_hour_pt.png", lb = "c")
+
+# Row 1: a + b side by side (match heights)
+info_a <- image_info(img_a)
+info_b <- image_info(img_b)
+h_target <- min(info_a$height, info_b$height)
+
+img_a_s <- image_scale(img_a, paste0("x", h_target))
+img_b_s <- image_scale(img_b, paste0("x", h_target))
+
+top_row <- image_append(c(img_a_s, img_b_s), stack = FALSE)
+
+# Row 2: c (pad to match top row width)
+w_top <- image_info(top_row)$width
+w_c <- image_info(img_c)$width
+
+if (w_c < w_top) {
+  img_c_padded <- image_extent(img_c, geometry = paste0(w_top, "x", image_info(img_c)$height), color = "white", gravity = "center")
+} else {
+  img_c_padded <- img_c
+  top_row <- image_extent(top_row, geometry = paste0(w_c, "x", image_info(top_row)$height), color = "white", gravity = "center")
+}
+
+# Stack vertically
+final_sensitivity <- image_append(c(top_row, img_c_padded), stack = TRUE)
+image_write(final_sensitivity, "figures/sensitivity.png")
+message("Saved figures/sensitivity.png")
+
+# Figure 6: Leisure participation outcomes ----
+img_a <- read.img(path = "figures/hill_q1.png", lb = "a")
+img_b <- read.img(path = "figures/mean_leisure_duration.png", lb = "b")
+
+# Match widths
+w_a <- image_info(img_a)$width
+w_b <- image_info(img_b)$width
+w_max <- max(w_a, w_b)
+
+img_a_padded <- image_extent(img_a, geometry = paste0(w_max, "x", image_info(img_a)$height), color = "white", gravity = "center")
+img_b_padded <- image_extent(img_b, geometry = paste0(w_max, "x", image_info(img_b)$height), color = "white", gravity = "center")
+
+# Stack vertically
+final_figure6 <- image_append(c(img_a_padded, img_b_padded), stack = TRUE)
+image_write(final_figure6, "figures/figure7.png")
+message("Saved figures/figure7.png")
+
+# Figure SEM sensitivity: 60min and 120min diagrams side by side ----
+img_a <- read.img(path = "results/sem_sensitivity/budget_60min/sem_diagram.png", lb = "a")
+img_b <- read.img(path = "results/sem_sensitivity/budget_120min/sem_diagram.png", lb = "b")
+
+# Match heights
+info_a <- image_info(img_a)
+info_b <- image_info(img_b)
+h_target <- min(info_a$height, info_b$height)
+
+img_a_s <- image_scale(img_a, paste0("x", h_target))
+img_b_s <- image_scale(img_b, paste0("x", h_target))
+
+# Append side by side
+final_sem_sens <- image_append(c(img_a_s, img_b_s), stack = FALSE)
+image_write(final_sem_sens, "figures/sem_sensitivity.png")
+message("Saved figures/sem_sensitivity.png")
+
+# Figure: Travel time budget and departure time side by side ----
+img_a <- read.img(path = "figures/travel_time_budget.png", lb = "a")
+img_b <- read.img(path = "figures/work_departure_time.png", lb = "b")
+
+# Match heights
+info_a <- image_info(img_a)
+info_b <- image_info(img_b)
+h_target <- min(info_a$height, info_b$height)
+
+img_a_s <- image_scale(img_a, paste0("x", h_target))
+img_b_s <- image_scale(img_b, paste0("x", h_target))
+
+# Append side by side
+final_tt_dep <- image_append(c(img_a_s, img_b_s), stack = FALSE)
+image_write(final_tt_dep, "figures/sta_parameters.png")
+message("Saved figures/sta_parameters.png")

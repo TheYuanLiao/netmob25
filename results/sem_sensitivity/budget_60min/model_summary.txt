@@ -1,0 +1,143 @@
+lavaan 0.6-19 ended normally after 114 iterations
+
+  Estimator                                       DWLS
+  Optimization method                           NLMINB
+  Number of model parameters                        56
+
+  Number of observations                            2415
+  Sampling weights variable                   weight_ind
+
+Model Test User Model:
+                                                      
+  Test statistic                                27.315
+  Degrees of freedom                                10
+  P-value (Chi-square)                           0.002
+
+Model Test Baseline Model:
+
+  Test statistic                              1437.590
+  Degrees of freedom                                34
+  P-value                                        0.000
+
+User Model versus Baseline Model:
+
+  Comparative Fit Index (CFI)                    0.988
+  Tucker-Lewis Index (TLI)                       0.958
+
+Root Mean Square Error of Approximation:
+
+  RMSEA                                          0.027
+  90 Percent confidence interval - lower         0.015
+  90 Percent confidence interval - upper         0.039
+  P-value H_0: RMSEA <= 0.050                    0.999
+  P-value H_0: RMSEA >= 0.080                    0.000
+
+Standardized Root Mean Square Residual:
+
+  SRMR                                           0.013
+
+Parameter Estimates:
+
+  Standard errors                             Standard
+  Information                                 Expected
+  Information saturated (h1) model        Unstructured
+
+Latent Variables:
+                   Estimate  Std.Err  z-value  P(>|z|)   Std.lv  Std.all
+  leisure_part =~                                                       
+    hill_q1           1.000                               0.555    0.574
+    mn_lsr_ (lam2)    0.917    0.096    9.549    0.000    0.509    0.535
+
+Regressions:
+                      Estimate  Std.Err  z-value  P(>|z|)   Std.lv  Std.all
+  ak_ihs ~                                                                 
+    female  (s_fm)       0.142    0.042    3.368    0.001    0.142    0.069
+    edu_hgh (s_d_)      -0.064    0.050   -1.289    0.197   -0.064   -0.030
+    pvrty_r (s_p_)       0.013    0.020    0.660    0.509    0.013    0.014
+    mode_pt (t_m_)      -0.427    0.113   -3.794    0.000   -0.427   -0.202
+    pt_sub  (t_p_)      -0.354    0.071   -4.963    0.000   -0.354   -0.164
+    actv_md (t_c_)       0.183    0.093    1.979    0.048    0.183    0.086
+  total_travel_time ~                                                      
+    ak_ihs     (a)      -0.261    0.024  -10.694    0.000   -0.261   -0.257
+    female  (g_fm)      -0.250    0.045   -5.560    0.000   -0.250   -0.119
+    edu_hgh (g_d_)      -0.095    0.051   -1.867    0.062   -0.095   -0.044
+    pvrty_r (g_p_)       0.029    0.021    1.398    0.162    0.029    0.030
+    mode_pt (m_m_)       0.203    0.109    1.859    0.063    0.203    0.094
+    pt_sub  (m_p_)       0.148    0.070    2.109    0.035    0.148    0.068
+    actv_md (m_c_)      -0.456    0.094   -4.858    0.000   -0.456   -0.211
+  leisure_part ~                                                           
+    ak_ihs     (c)       0.067    0.018    3.777    0.000    0.121    0.125
+    ttl_tr_    (b)       0.055    0.019    2.945    0.003    0.100    0.105
+    female  (d_fm)      -0.010    0.034   -0.291    0.771   -0.018   -0.009
+    edu_hgh (d_d_)       0.210    0.037    5.656    0.000    0.379    0.182
+    pvrty_r (d_p_)      -0.081    0.016   -5.235    0.000   -0.147   -0.158
+    hh_6    (d__6)      -0.281    0.034   -8.216    0.000   -0.505   -0.252
+    mode_pt (r_m_)      -0.006    0.081   -0.072    0.942   -0.011   -0.005
+    pt_sub  (r_p_)       0.046    0.047    0.986    0.324    0.083    0.040
+    actv_md (r_c_)       0.261    0.075    3.481    0.000    0.470    0.228
+
+Covariances:
+                   Estimate  Std.Err  z-value  P(>|z|)   Std.lv  Std.all
+  female ~~                                                             
+    edu_high         -0.012    0.005   -2.457    0.014   -0.012   -0.051
+    poverty_rate     -0.019    0.010   -1.893    0.058   -0.019   -0.036
+    mode_pt          -0.009    0.005   -1.748    0.080   -0.009   -0.035
+    pt_sub            0.001    0.005    0.123    0.902    0.001    0.002
+    active_mode      -0.018    0.005   -3.587    0.000   -0.018   -0.073
+    hh_6             -0.017    0.005   -3.484    0.000   -0.017   -0.068
+  edu_high ~~                                                           
+    poverty_rate     -0.077    0.010   -7.589    0.000   -0.077   -0.148
+    mode_pt           0.036    0.005    7.354    0.000    0.036    0.152
+    pt_sub            0.021    0.005    4.356    0.000    0.021    0.090
+    active_mode       0.042    0.005    8.769    0.000    0.042    0.180
+    hh_6             -0.004    0.005   -0.783    0.434   -0.004   -0.016
+  poverty_rate ~~                                                       
+    mode_pt           0.052    0.009    5.487    0.000    0.052    0.098
+    pt_sub            0.049    0.009    5.228    0.000    0.049    0.095
+    active_mode      -0.002    0.010   -0.247    0.805   -0.002   -0.005
+    hh_6             -0.035    0.010   -3.556    0.000   -0.035   -0.064
+  mode_pt ~~                                                            
+    pt_sub            0.099    0.005   21.681    0.000    0.099    0.422
+    active_mode       0.148    0.003   45.067    0.000    0.148    0.626
+    hh_6             -0.038    0.005   -7.987    0.000   -0.038   -0.154
+  pt_sub ~~                                                             
+    active_mode       0.025    0.005    5.545    0.000    0.025    0.109
+    hh_6             -0.041    0.005   -8.736    0.000   -0.041   -0.170
+  active_mode ~~                                                        
+    hh_6              0.001    0.005    0.246    0.805    0.001    0.005
+
+Variances:
+                   Estimate  Std.Err  z-value  P(>|z|)   Std.lv  Std.all
+   .hill_q1           0.628    0.062   10.082    0.000    0.628    0.671
+   .mean_lesr_drtn    0.646    0.086    7.537    0.000    0.646    0.713
+   .ak_ihs            0.978    0.044   22.208    0.000    0.978    0.915
+   .total_travl_tm    0.955    0.105    9.110    0.000    0.955    0.867
+   .leisure_part      0.247    0.032    7.749    0.000    0.801    0.801
+    female            0.249    0.001  253.142    0.000    0.249    1.000
+    edu_high          0.232    0.002  129.324    0.000    0.232    1.000
+    poverty_rate      1.159    0.039   29.377    0.000    1.159    1.000
+    mode_pt           0.238    0.002   97.792    0.000    0.238    1.000
+    pt_sub            0.231    0.003   75.669    0.000    0.231    1.000
+    active_mode       0.236    0.002  117.699    0.000    0.236    1.000
+    hh_6              0.250    0.002  122.707    0.000    0.250    1.000
+
+R-Square:
+                   Estimate
+    hill_q1           0.329
+    mean_lesr_drtn    0.287
+    ak_ihs            0.085
+    total_travl_tm    0.133
+    leisure_part      0.199
+
+Defined Parameters:
+                   Estimate  Std.Err  z-value  P(>|z|)   Std.lv  Std.all
+    indirect         -0.014    0.005   -2.765    0.006   -0.026   -0.027
+    direct            0.067    0.018    3.777    0.000    0.121    0.125
+    total             0.053    0.016    3.296    0.001    0.095    0.098
+    direct_div        0.067    0.018    3.777    0.000    0.121    0.125
+    direct_dur        0.062    0.016    3.769    0.000    0.062    0.067
+    indirect_div     -0.014    0.005   -2.765    0.006   -0.026   -0.027
+    indirect_dur     -0.013    0.005   -2.765    0.006   -0.013   -0.014
+    total_div         0.053    0.016    3.296    0.001    0.095    0.098
+    total_dur         0.048    0.015    3.290    0.001    0.048    0.053
+
