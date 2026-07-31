@@ -181,8 +181,8 @@ image_write(final_sensitivity, "figures/sensitivity.png")
 message("Saved figures/sensitivity.png")
 
 # Figure 6: Leisure participation outcomes ----
-img_a <- read.img(path = "figures/hill_q1.png", lb = "a")
-img_b <- read.img(path = "figures/mean_leisure_duration.png", lb = "b")
+img_a <- read.img(path = "figures/hill_q1.png", lb = "a", size = 50)
+img_b <- read.img(path = "figures/mean_leisure_duration.png", lb = "b", size = 50)
 
 # Match widths
 w_a <- image_info(img_a)$width
@@ -198,8 +198,8 @@ image_write(final_figure6, "figures/figure7.png")
 message("Saved figures/figure7.png")
 
 # Figure SEM sensitivity: 60min and 120min diagrams side by side ----
-img_a <- read.img(path = "results/sem_sensitivity/budget_60min/sem_diagram.png", lb = "a")
-img_b <- read.img(path = "results/sem_sensitivity/budget_120min/sem_diagram.png", lb = "b")
+img_a <- read.img(path = "results/sem_sensitivity/budget_60min/sem_diagram.png", lb = "a", size = 100)
+img_b <- read.img(path = "results/sem_sensitivity/budget_120min/sem_diagram.png", lb = "b", size = 100)
 
 # Match heights
 info_a <- image_info(img_a)
