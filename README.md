@@ -1,4 +1,4 @@
-# Space-Time Accessibility and Leisure Activity Participation
+# Space–time accessibility supports participation in after-work leisureactivities
 
 Analysis of the relationship between space-time accessibility (STA) and leisure activity participation in the Île-de-France (Greater Paris) region. Uses mobility data from the NetMob 2025 Data Challenge capturing a full week of daily activity for over 3,300 participants.
 
